@@ -1,8 +1,13 @@
+import Layout from "./components/Layout"
+import RoutesList from "./pages/Routes"
+
 function App() {
   return (
-    <>
-     This is Zhafranarman.com
-    </>
+    <Layout>
+      <main>
+        <RoutesList/>
+      </main>
+    </Layout>
   )
 }
 
