@@ -1,0 +1,38 @@
+@import "./breakpoints";
+
+.container{
+
+  margin-inline: auto;
+
+  // Start of Breakpoint Phone
+  @include media (">=xs", "<=sm"){
+    margin-inline: 1rem;
+  }
+
+  @include media (">sm", "<md"){
+    margin-inline: 1rem;
+  }
+  // End of Breakpoint Phone
+
+  // Start of Breakpoint Tablet
+  @include media (">=md", "<lg", "retina2x"){
+    margin-inline: 1.5rem;
+  }
+  // End of Breakpoint Tablet
+
+  // Start of Breakpoint Desktop
+  @include media (">=lg", "<xl"){
+    margin-inline: 2.5rem;
+  }
+
+  @include media (">=xl", "<2xl"){
+    margin-inline: 2.5rem;
+  }
+
+  @include media (">=2xl"){
+    max-width: 1800px;
+    padding-inline: 2.5rem;
+  }
+  // End of Breakpoint Desktop
+  
+}

@@ -1,0 +1,13 @@
+.hero-section{
+  height: 100svh;
+  display: grid;
+  place-items: center;
+
+  .hero-text{
+    font-family: $font-family-accent;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+}

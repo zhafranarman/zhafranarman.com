@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .navbar {
+    padding-block: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include media("<=sm"){
+      justify-content: center;
+      padding-block: 1rem;
+    }
+  }
+  .logo-wrapper {
+    height: 20px;
+
+    .logo {
+      height: inherit;
+      fill: $color-dark;
+
+      @include media ("<=sm"){
+        height: 1.15rem;
+
+      }
+    }
+  }
+
+  .mail-header{
+    font-size: 1.15rem;
+    color: $color-dark;
+
+    @include media ("<=sm"){
+      display: none;
+    }
+  }
+}
