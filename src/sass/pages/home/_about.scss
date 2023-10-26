@@ -1,0 +1,38 @@
+.about-section {
+  background-color: $color-dark;
+  padding-block: 10rem;
+
+  .about-content {
+    color: $color-white;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .about-title {
+      font-size: 3.5rem;
+      font-family: $font-family-accent;
+      font-weight: 400;
+      margin-block: 1rem;
+      text-align: center;
+    }
+
+    .about-text {
+      margin-block: 2rem;
+      flex-wrap: wrap;
+      text-align: center;
+
+      .word-mask {
+        display: inline-flex;
+        position: relative;
+        overflow: hidden;
+
+        .word {
+          position: relative;
+          font-size: 2rem;
+          letter-spacing: -1px;
+        }
+      }
+    }
+  }
+}
