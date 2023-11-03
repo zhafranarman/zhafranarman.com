@@ -8,44 +8,80 @@
     text-align: center;
     max-width: 65%;
 
-    @include media (">=md", "<xl"){
+    @include media(">=md", "<xl") {
       max-width: 68%;
     }
 
     .hero-text {
       font-family: $font-family-accent;
+      color: $color-dark;
       font-size: 4.5rem;
-      line-height: 1;
+      line-height: 1.1;
       font-weight: 400;
       margin: 0;
-      display: inline;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
     }
   }
+
   .hero-image-wrapper {
     position: absolute;
-    z-index: -1;
+    z-index: -3;
     margin: 0;
-  }
 
-  .image-1 {
-    left: 3%;
-    top: 20%;
-    height: 400px;
-    width: 280px;
-  }
+    .hero-image {
+      position: relative;
+      z-index: -2;
+    }
 
-  .image-2 {
-    height: 215px;
-    width: 256px;
-    top: 8%;
-    left: 50%;
-  }
+    .hero-image-caption {
+      position: absolute;
+      font-size: 1.35rem;
+      font-family: $font-family-hand;
+    }
 
-  .image-3 {
-    height: 256px;
-    width: 256px;
-    top: 60%;
-    left: 75%;
+    &:nth-child(2) {
+      left: 4%;
+      top: 20%;
+      height: 400px;
+      width: 280px;
+
+      .hero-image-caption {
+        top: -10%;
+        left: -15%;
+        rotate: -17deg;
+      }
+    }
+    &:nth-child(3) {
+      height: 215px;
+      width: 256px;
+      top: 3%;
+      left: 50%;
+
+      .hero-image-caption {
+        top: 65%;
+        left: 90%;
+        rotate: 7deg;
+        width: 100%;
+      }
+    }
+
+    &:nth-child(4) {
+      height: 256px;
+      width: 256px;
+      top: 60%;
+      left: 75%;
+
+      .hero-image-caption {
+        top: 50%;
+        left: -35%;
+        rotate: -9deg;
+        width: 100%;
+      }
+    }
   }
 
   .scroll-to {
@@ -58,35 +94,34 @@
     margin-right: auto;
     color: $color-dark;
     transition: all 0.4s;
-  
+
     &:hover {
       transform: translateY(20%);
     }
-  
+
     .scroll-to-text {
       display: block;
-      font-size: 1.75rem;
-      line-height: 1;
-      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
       font-family: $font-family-hand;
       font-weight: 500;
     }
-  
+
     .scroll-to-line {
       background-color: $color-dark;
       display: block;
-      height: 30px;
+      height: 32px;
       margin: 0 auto;
       position: relative;
       transition: all 0.4s;
       width: 2px;
     }
-  
+
     .grow {
       animation: grow 2s ease-in-out infinite;
       transform-origin: bottom;
     }
-  
+
     @keyframes grow {
       0%,
       20%,
@@ -95,18 +130,23 @@
       to {
         transform: scaleY(1.1);
       }
-  
+
       40% {
         transform: scaleY(0.666);
       }
-  
+
       60% {
         transform: scaleY(1.333);
       }
     }
   }
-  
+
   .is-scrolled {
     opacity: 0;
+  }
+
+  .about-me-cta {
+    align-self: center;
+    display: flex;
   }
 }
