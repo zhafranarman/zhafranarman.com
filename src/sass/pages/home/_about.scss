@@ -1,13 +1,20 @@
 .about-section {
-  background-color: $color-dark;
-  padding-block: 10rem;
+
+  padding-block: 5rem;
+  max-width: 1200px;
+  margin: auto;
 
   .about-content {
+
+    background-color: $color-dark;
     color: $color-white;
-    max-width: 1000px;
+    border-radius: 2rem;
+    padding: 7rem;
     margin: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+
 
     .about-title {
       font-size: 3.5rem;
@@ -34,5 +41,31 @@
         }
       }
     }
+
+    .about-me-cta{
+      align-self: center;
+      font-family: $font-family-hand;
+      font-size: 2rem;
+      margin-top: 2rem;
+      cursor: pointer;
+      color: $color-white;
+      background-image: url(/src/assets/underline.svg);
+        background-position: bottom 0em left;
+        background-repeat: no-repeat;
+        background-size: 150% 0.2em;
+    }
+    .illu_about{
+      position: absolute;
+      top: 10%;
+      left: -10%;
+      height: 40%;
+    }
+    .illu_about2{
+      position: absolute;
+      top: 50%;
+      left: 82%;
+      height: 40%;
+    }
   }
+
 }

@@ -1,7 +1,19 @@
+import {motion as m} from "framer-motion"
+
 const Navbar = () => {
+
+  const navbarAni = {
+    hidden: { y: "-100%", opacity: 0, transition: { duration: 0.5 } },
+    visible: {
+      y: "0",
+      opacity: 1,
+      transition: { duration: 0.5 },
+    }
+  }
+
   return (
     <header className="header">
-      <nav className="container navbar">
+      <m.nav className="container navbar" variants={navbarAni} initial="hidden" animate="visible">
         <div className="logo-wrapper">
           <svg className="logo" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" width="100%" height="100%" viewBox="0 0 163 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M44.1004 2.35514C43.7425 2.89491 43.5635 3.57389 43.5635 4.39207V5.90911H41.5351V7.95457H43.5635V19H46.1118V7.95457H48.9328V5.90911H46.1118V4.73298C46.1118 4.15343 46.2425 3.71025 46.5038 3.40343C46.7709 3.09661 47.2141 2.9432 47.8334 2.9432C48.1004 2.9432 48.3277 2.96877 48.5152 3.01991C48.7027 3.06536 48.8561 3.10514 48.9754 3.13923L49.572 1.07673C49.3959 1.00855 49.126 0.934682 48.7624 0.855137C48.3987 0.769909 47.9612 0.727295 47.4499 0.727295C46.7567 0.727295 46.1146 0.863659 45.5237 1.13639C44.9328 1.40343 44.4584 1.80968 44.1004 2.35514Z" />
@@ -19,7 +31,7 @@ const Navbar = () => {
           </svg>
         </div>
         <a className="mail-header" href="mailto:hi@zhafranarman.com">hi@zhafranarman.com</a>
-      </nav>
+      </m.nav>
     </header>
   );
 }

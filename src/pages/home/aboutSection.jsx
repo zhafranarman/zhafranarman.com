@@ -1,5 +1,7 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
+import illu_about1 from "../../assets/images/illu_about.webp"
+import illu_about2 from "../../assets/images/illu_about2.webp"
 
 
 const AboutSection = () => {
@@ -8,7 +10,7 @@ const AboutSection = () => {
   const isInView = useInView(content);
 
   const wordAni = {
-    hidden: { y: "100%", opacity: 0 },
+    hidden: { y: "100%", opacity: 0, transition: { duration: 0.5 } },
     visible: (i) => ({
       y: "0%",
       opacity: 1,
@@ -19,11 +21,23 @@ const AboutSection = () => {
   const titleAni = {
     hidden: {
       y: "100%",
-      opacity: 0 },
+      opacity: 0
+    },
     visible: {
       y: "0",
       opacity: 1,
-      transition : { duration: 0.5 },
+      transition: { duration: 0.5 },
+    }
+  }
+  const ctaAni = {
+    hidden: {
+      y: "100%",
+      opacity: 0
+    },
+    visible: {
+      y: "0",
+      opacity: 1,
+      transition: { duration: 0.5, delay: 0.8 },
     }
   }
 
@@ -31,8 +45,8 @@ const AboutSection = () => {
 
   return (
     <section className="about-section">
-      <div className="about-content container">
-        <motion.h3 ref={content} variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title">A Little Tale About Myself</motion.h3>
+      <div ref={content} className="about-content">
+        <motion.h3  variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title">A Little Tale About Myself</motion.h3>
         <p className="about-text">
           {
             phrase.split(" ").map((word, index) => {
@@ -40,6 +54,11 @@ const AboutSection = () => {
             })
           }
         </p>
+        <motion.a variants={ctaAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-me-cta" href="#">
+          Learn More
+        </motion.a>
+      <img className="illu_about" src={illu_about1}/>
+      <img className="illu_about2" src={illu_about2}/>
       </div>
     </section>
   );

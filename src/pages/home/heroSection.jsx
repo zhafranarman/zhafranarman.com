@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react"
 
-
-import hero1 from "../../assets/images/hero1.webp"
-import hero2 from "../../assets/images/hero2.webp"
-import hero3 from "../../assets/images/hero3.webp"
+import hero1 from "../../assets/images/hero1-rizz.webp"
+import hero2 from "../../assets/images/hero2-rizz.webp"
+import hero3 from "../../assets/images/hero2.webp"
 
 const Hero = () => {
 
@@ -21,7 +20,7 @@ const Hero = () => {
     }
   };
 
-  const phrase = `Wilujeng Tepang. I'm Muhammad Zhafran Arman, a UI & UX Designer and frontend developer.`
+  const phrase = "Wilujeng Tepang. I'm Muhammad Zhafran Arman, a UI & UX Designer and frontend developer."
 
   return (
     <section data-scroll data-scroll-section className="hero-section container">
@@ -39,11 +38,11 @@ const Hero = () => {
         <img src={hero1} width="100%" height="100%" alt="" className="hero-image" />
       </figure>
       <figure data-scroll data-scroll-speed="0.2" className="hero-image-wrapper">
-        <img src={hero3} width="100%" height="100%" alt="" className="hero-image" />
+        <img src={hero2} width="100%" height="100%" alt="" className="hero-image" />
         <figcaption className="hero-image-caption">this is one of<br />my latest work.</figcaption>
       </figure>
       <figure data-scroll data-scroll-speed="0.3" className="hero-image-wrapper">
-        <img src={hero2} width="100%" height="100%" alt="" className="hero-image" />
+        <img src={hero3} width="100%" height="100%" alt="" className="hero-image" />
         <figcaption className="hero-image-caption">this is one of<br />my self initiated<br />project.</figcaption>
       </figure>
       <div className="scroll-to">
