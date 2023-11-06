@@ -31,10 +31,16 @@
 
   @include media (">=2xl"){
     max-width: 1800px;
-    padding-inline: 2.5rem;
+    padding-inline: 4rem;
   }
   // End of Breakpoint Desktop
   
+}
+
+.inner-section{
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-block: 8rem;
 }
 
 .grain {
@@ -43,7 +49,7 @@
   background-image: url(/src/assets/images/misc/kkk.png);
   background-repeat: repeat;
   content: "";
-  opacity: 0.75;
+  opacity: 1;
   height: 300%;
   left: -100%;
   pointer-events: none;

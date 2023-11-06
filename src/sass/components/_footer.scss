@@ -1,3 +1,40 @@
 footer{
-  height: 200vh;
+  color: $color-white;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+
+  .subfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    .label{
+      font-size: 2rem;
+      font-family: $font-family-accent;
+      letter-spacing: -1px;
+      margin-block: 2rem;
+    }
+    .footer-mail{
+      font-size: 3rem;
+      font-family: $font-family-hand;
+      background-image: url(/src/assets/underline.svg);
+      background-position: bottom 0em left;
+      background-repeat: no-repeat;
+      background-size: 150% 0.2em;
+    }
+  }
+
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .social-links{
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+    }
+  }
 }

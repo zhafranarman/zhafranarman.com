@@ -1,6 +1,6 @@
-import { useRef } from "react"
+import React,{useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import about_img from "../../assets/images/About.webp"
+import about_img from "../../assets/images/about.webp"
 
 const AboutSection = () => {
 
@@ -35,7 +35,7 @@ const AboutSection = () => {
     visible: {
       y: "0",
       opacity: 1,
-      transition: { duration: 0.5, delay: 0.3},
+      transition: { duration: 0.5, delay: 0.4 },
     }
   }
 
@@ -43,21 +43,23 @@ const AboutSection = () => {
 
   return (
     <section className="about-section container">
-      <div ref={content} className="about-content">
-        <div className="about-heading">
-          <motion.h3  variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title"><span className="about-title-row">A Little Tale</span><span className="about-title-row">About Myself</span></motion.h3>
-          <img className="about-image" src={about_img}  width="350px"/>
+      <div className="inner-section">
+        <div className="about-content" ref={content}>
+          <div className="about-heading">
+            <motion.h3 variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title"><span className="about-title-row">A Little Tale</span><span className="about-title-row">About Myself</span></motion.h3>
+            <img className="about-image" src={about_img} width="400px" />
+          </div>
+          <p className="about-text">
+            {
+              phrase.split(" ").map((word, index) => {
+                return <span key={index} className="word-mask"><motion.span className="word" variants={wordAni} initial="hidden" animate={isInView ? "visible" : "hidden"} custom={index}>{word}&nbsp;</motion.span></span>
+              })
+            }
+          </p>
+          <motion.a variants={ctaAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-me-cta" href="#">
+            Read My Story
+          </motion.a>
         </div>
-        <p className="about-text">
-          {
-            phrase.split(" ").map((word, index) => {
-              return <span key={index} className="word-mask"><motion.span className="word" variants={wordAni} initial="hidden" animate={isInView ? "visible" : "hidden"} custom={index}>{word}&nbsp;</motion.span></span>
-            })
-          }
-        </p>
-        <motion.a variants={ctaAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-me-cta" href="#">
-          Read My Story
-        </motion.a>
       </div>
     </section>
   );
