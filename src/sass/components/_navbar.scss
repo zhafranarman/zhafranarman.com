@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 
   .navbar {
     padding-block: 1.5rem;
@@ -10,7 +11,7 @@
 
     @include media("<=sm"){
       justify-content: center;
-      padding-block: 1rem;
+      padding-block: 2rem;
     }
   }
   .logo-wrapper {
@@ -18,7 +19,7 @@
 
     .logo {
       height: inherit;
-      fill: $color-dark;
+      fill: $color-white;
 
       @include media ("<=sm"){
         height: 1.15rem;
@@ -29,7 +30,7 @@
 
   .mail-header{
     font-size: 1.15rem;
-    color: $color-dark;
+    color: $color-white;
 
     @include media ("<=sm"){
       display: none;

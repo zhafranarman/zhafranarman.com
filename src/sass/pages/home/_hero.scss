@@ -14,16 +14,17 @@
 
     .hero-text {
       font-family: $font-family-accent;
-      color: $color-dark;
+      color: $color-white;
       font-size: 4.5rem;
       line-height: 1.1;
       font-weight: 400;
       margin: 0;
-
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      position: relative;
+      z-index: 3;
     }
   }
 
@@ -31,16 +32,18 @@
     position: absolute;
     z-index: -3;
     margin: 0;
-
+    
     .hero-image {
       position: relative;
-      z-index: -2;
+      z-index: -3;
+      border-radius: 1rem;
     }
 
     .hero-image-caption {
       position: absolute;
       font-size: 1.35rem;
       font-family: $font-family-hand;
+      color: $color-white;
     }
 
     &:nth-child(2) {
@@ -93,7 +96,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: $color-dark;
+    color: $color-white;
     transition: all 0.4s;
 
     &:hover {
@@ -109,7 +112,7 @@
     }
 
     .scroll-to-line {
-      background-color: $color-dark;
+      background-color: $color-white;
       display: block;
       height: 32px;
       margin: 0 auto;

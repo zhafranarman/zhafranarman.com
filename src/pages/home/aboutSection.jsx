@@ -1,8 +1,6 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import illu_about1 from "../../assets/images/illu_about.webp"
-import illu_about2 from "../../assets/images/illu_about2.webp"
-
+import about_img from "../../assets/images/About.webp"
 
 const AboutSection = () => {
 
@@ -37,16 +35,19 @@ const AboutSection = () => {
     visible: {
       y: "0",
       opacity: 1,
-      transition: { duration: 0.5, delay: 0.8 },
+      transition: { duration: 0.5, delay: 0.3},
     }
   }
 
   const phrase = `As a kid, my dad was my tech guru, opening my eyes to the magic of technology. Now, I'm on the internet, crafting digital experiences for people. Who knew the kid who thought a computer mouse was a pet would grow up to be an internet wizard?`
 
   return (
-    <section className="about-section">
+    <section className="about-section container">
       <div ref={content} className="about-content">
-        <motion.h3  variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title">A Little Tale About Myself</motion.h3>
+        <div className="about-heading">
+          <motion.h3  variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title"><span className="about-title-row">A Little Tale</span><span className="about-title-row">About Myself</span></motion.h3>
+          <img className="about-image" src={about_img}  width="350px"/>
+        </div>
         <p className="about-text">
           {
             phrase.split(" ").map((word, index) => {
@@ -55,10 +56,8 @@ const AboutSection = () => {
           }
         </p>
         <motion.a variants={ctaAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-me-cta" href="#">
-          Learn More
+          Read My Story
         </motion.a>
-      <img className="illu_about" src={illu_about1}/>
-      <img className="illu_about2" src={illu_about2}/>
       </div>
     </section>
   );

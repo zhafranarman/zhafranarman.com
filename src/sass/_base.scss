@@ -36,3 +36,64 @@
   // End of Breakpoint Desktop
   
 }
+
+.grain {
+
+  animation: grain 10s steps(20) infinite;
+  background-image: url(/src/assets/images/misc/kkk.png);
+  background-repeat: repeat;
+  content: "";
+  opacity: 0.75;
+  height: 300%;
+  left: -100%;
+  pointer-events: none;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+
+  @keyframes grain {
+    0% {
+        transform: translate(20%,-15%)
+    }
+
+    10% {
+        transform: translate(-20%,-15%)
+    }
+
+    20% {
+        transform: translate(20%,-5%)
+    }
+
+    30% {
+        transform: translate(-20%,-5%)
+    }
+
+    40% {
+        transform: translate(20%,5%)
+    }
+
+    50% {
+        transform: translate(-20%,5%)
+    }
+
+    60% {
+        transform: translate(20%,15%)
+    }
+
+    70% {
+        transform: translate(-20%,15%)
+    }
+
+    80% {
+        transform: translate(20%,5%)
+    }
+
+    90% {
+        transform: translate(-20%,5%)
+    }
+
+    to {
+        transform: translate(20%,-5%)
+    }
+  }
+}

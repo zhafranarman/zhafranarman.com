@@ -1,33 +1,43 @@
 .about-section {
-
-  padding-block: 5rem;
-  max-width: 1200px;
-  margin: auto;
+  padding: 5rem;
 
   .about-content {
-
-    background-color: $color-dark;
     color: $color-white;
-    border-radius: 2rem;
-    padding: 7rem;
-    margin: auto;
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
 
+    .about-heading {
+      display: flex;
+      align-items: center;
+      position: relative;
 
-    .about-title {
-      font-size: 3.5rem;
-      font-family: $font-family-accent;
-      font-weight: 400;
-      margin-block: 1rem;
-      text-align: center;
+      .about-title {
+        font-size: 4.5rem;
+        font-family: $font-family-accent;
+        font-weight: 400;
+        line-height: 1.2;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+
+        .about-title-row:nth-child(2) {
+          align-self: flex-end;
+        }
+      }
+
+      .about-image {
+        position: relative;
+        left: -50px;
+        z-index: -1;
+      }
     }
 
     .about-text {
-      margin-block: 2rem;
+      margin-block: 3rem;
       flex-wrap: wrap;
-      text-align: center;
+      width: 75%;
+      align-self: end;
 
       .word-mask {
         display: inline-flex;
@@ -42,30 +52,19 @@
       }
     }
 
-    .about-me-cta{
-      align-self: center;
+    .about-me-cta {
+      top: 40%;
+      left:80%;
+      position: absolute;
+      rotate: 4deg;
       font-family: $font-family-hand;
       font-size: 2rem;
-      margin-top: 2rem;
       cursor: pointer;
       color: $color-white;
       background-image: url(/src/assets/underline.svg);
-        background-position: bottom 0em left;
-        background-repeat: no-repeat;
-        background-size: 150% 0.2em;
-    }
-    .illu_about{
-      position: absolute;
-      top: 10%;
-      left: -10%;
-      height: 40%;
-    }
-    .illu_about2{
-      position: absolute;
-      top: 50%;
-      left: 82%;
-      height: 40%;
+      background-position: bottom 0em left;
+      background-repeat: no-repeat;
+      background-size: 150% 0.2em;
     }
   }
-
 }
