@@ -1,14 +1,42 @@
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useLayoutEffect } from "react";
 
 import project1 from "../../assets/images/project/project-gcbme.webp"
 
 const WorkSection = () => {
 
-  const projectThumbnail = useRef(null);
+  const projectThumbnail = useRef();
+  const projectDesc = useRef();
+
   useLayoutEffect(() => {
-    gsap
-  })
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+        gsap.from(projectThumbnail.current, {
+          scrollTrigger:{
+            trigger: projectThumbnail.current,
+            start: "0px bottom",
+            end: "bottom+=200px bottom",
+            scrub: true,
+          },
+          xPercent: 30,
+          rotate: 0,
+        });
+        gsap.from(projectDesc.current, {
+          scrollTrigger:{
+            trigger: projectDesc.current,
+            start: "0px bottom",
+            end: "bottom+=200px bottom",
+            scrub: true,
+          },
+          xPercent: -30,
+          rotate: 0,
+          opacity: 0.5,
+        });
+        
+    });
+    return () => ctx.revert();
+    }, [projectThumbnail.current]);
 
   return (
     <section className="work-section container">
@@ -21,54 +49,16 @@ const WorkSection = () => {
         <article className="work-section-card">
           <figure className="project-content">
             <div className="project-thumbnail-wrapper">
-              <img className="project-thumbnail" src={project1} height="500px" />
+              <img ref={projectThumbnail} className="project-thumbnail" src={project1} height="500px" />
             </div>
-            <figcaption className="project-detail">
+            <figcaption ref={projectDesc} className="project-detail">
               <h4 className="project-name">
                 Web Development GCBME
               </h4>
               <p className="project-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Velit illum tenetur aliquam ipsam mollitia error. Ipsa quae facilis
-                nemo blanditiis eaque officia deleniti omnis amet
+                I revamped the GCBME website in three months, enhancing both its design and information. The aim was to create an engaging, user-friendly platform.
               </p>
-              <a className="project-cta">Learn More</a>
-            </figcaption>
-          </figure>
-        </article>
-        <article className="work-section-card">
-          <figure className="project-content">
-            <div className="project-thumbnail-wrapper">
-              <img className="project-thumbnail" src={project1} height="500px" />
-            </div>
-            <figcaption className="project-detail">
-              <h4 className="project-name">
-                Web Development GCBME
-              </h4>
-              <p className="project-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Velit illum tenetur aliquam ipsam mollitia error. Ipsa quae facilis
-                nemo blanditiis eaque officia deleniti omnis amet
-              </p>
-              <a className="project-cta">Learn More</a>
-            </figcaption>
-          </figure>
-        </article>
-        <article className="work-section-card">
-          <figure className="project-content">
-            <div className="project-thumbnail-wrapper">
-              <img className="project-thumbnail" src={project1} height="500px" />
-            </div>
-            <figcaption className="project-detail">
-              <h4 className="project-name">
-                Web Development GCBME
-              </h4>
-              <p className="project-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Velit illum tenetur aliquam ipsam mollitia error. Ipsa quae facilis
-                nemo blanditiis eaque officia deleniti omnis amet
-              </p>
-              <a className="project-cta">Learn More</a>
+              {/* <a className="project-cta">Learn More</a> */}
             </figcaption>
           </figure>
         </article>

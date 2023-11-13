@@ -1,5 +1,4 @@
 .work-section {
-  padding-block: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +6,7 @@
 
   .work-section-heading {
     margin-inline: auto;
-    width: 45%;
+    width: 50%;
     color: $color-white;
 
     .work-section-title {
@@ -46,6 +45,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative;
+        z-index: -1;
 
         .project-name {
           font-size: 3rem;

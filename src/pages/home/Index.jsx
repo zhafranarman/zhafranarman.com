@@ -6,8 +6,8 @@ const Home = () => {
 
   
   return (
-    <>
-      <Hero/>  
+    <> 
+      <Hero/>
       <AboutSection/>
       <WorkSection/>
     </>

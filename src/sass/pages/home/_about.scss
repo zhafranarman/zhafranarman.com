@@ -1,44 +1,64 @@
 .about-section {
-
   .about-content {
     color: $color-white;
     position: relative;
+    gap: 5rem;
     display: flex;
-    flex-direction: column;
 
     .about-heading {
       display: flex;
-      align-items: center;
+      flex: 1;
       position: relative;
 
       .about-title {
-        font-size: 4.5rem;
+        font-size: 4rem;
         font-family: $font-family-accent;
+        text-shadow: -2.5px 2.5px 5px rgba(0, 0, 0, 0.25);
         font-weight: 400;
-        line-height: 1.2;
+        line-height: 1;
         display: flex;
         flex-direction: column;
-        width: 30%;
-
-        .about-title-row:nth-child(2) {
-          align-self: flex-end;
-        }
+        margin: 0;
+        text-wrap: nowrap;
       }
 
-      .about-image {
+      .about-image-frame {
+
+        z-index: -3;
         position: relative;
-        left: -40px;
-        z-index: -1;
-        rotate: 4deg;
-        border-radius: 1rem;
+        left: -10%;
+        rotate: 5deg;
+        width: min-content;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: min-content;
+
+        padding: 1.5rem;
+        border-radius: 0.15rem;
+        background-image: url(src/assets/misc/instax-texture.webp);
+        background-repeat: repeat;
+
+        .about-image {
+          z-index: 1;
+          width: 300px;
+        }
+
+        .about-image-caption {
+          font-size: 1.25rem;
+          color: $color-dark;
+          font-family: $font-family-hand;
+          font-weight: 400;
+          text-align: center;
+          text-wrap: wrap;
+        }
       }
     }
 
     .about-text {
-      margin-block: 3rem;
+      margin-block: 2rem;
       flex-wrap: wrap;
-      width: 75%;
-      align-self: end;
 
       .word-mask {
         display: inline-flex;
@@ -46,8 +66,8 @@
         overflow: hidden;
 
         .word {
+          font-size: 1.75rem;
           position: relative;
-          font-size: 2rem;
           letter-spacing: -1px;
         }
       }
@@ -55,7 +75,7 @@
 
     .about-me-cta {
       top: 40%;
-      left:80%;
+      left: 80%;
       position: absolute;
       rotate: 4deg;
       font-family: $font-family-hand;

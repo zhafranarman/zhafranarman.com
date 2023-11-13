@@ -1,156 +1,80 @@
 .hero-section {
-  height: 100svh;
-  display: grid;
-  place-items: center;
+  height: auto;
+  padding-top: 20vh;
+  padding-bottom: 8rem;
+  position: relative;
 
-  .hero-text-container {
-    position: relative;
-    text-align: center;
-    max-width: 65%;
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    @include media(">=md", "<xl") {
-      max-width: 68%;
-    }
-
-    .hero-text {
+    .name {
       font-family: $font-family-accent;
       color: $color-white;
-      font-size: 4.5rem;
-      line-height: 1.1;
-      font-weight: 400;
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+      font-size: 12rem;
+      line-height: 0.9;
       position: relative;
+    }
+    .name:nth-child(1) {
       z-index: 3;
+      text-shadow: -4px 4px 5px rgba(0, 0, 0, 0.25);
+    }
+    .name:nth-child(2) {
+      z-index: -1;
     }
   }
-
   .hero-image-wrapper {
-    position: absolute;
-    z-index: -3;
+    position: relative;
+    display: grid;
+    place-items: center;
     margin: 0;
-    
-    .hero-image {
-      position: relative;
-      z-index: -3;
-      border-radius: 1rem;
-    }
 
-    .hero-image-caption {
+    .hero-image-frame {
+      margin-top: 5rem;
+      width: 350px;
+
+      //Pollaroid Frame
+      padding: 1.75rem;
+      border-radius: 0.15rem;
+      background-image: url(src/assets/misc/instax-texture.webp);
+      background-repeat: repeat;
+
+      .hero-image {
+        width: inherit;
+        height: auto;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .hero-cta {
+  
       position: absolute;
-      font-size: 1.35rem;
-      font-family: $font-family-hand;
-      color: $color-white;
-    }
-
-    &:nth-child(2) {
-      left: 4%;
-      top: 20%;
-      height: 400px;
-      width: 280px;
-
-      .hero-image-caption {
-        top: 90%;
-        left: -10%;
-        rotate: 17deg;
-        width: 100%;
-      }
-    }
-    &:nth-child(3) {
-      height: 215px;
-      width: 256px;
-      top: 3%;
-      left: 50%;
-
-      .hero-image-caption {
-        top: 65%;
-        left: 90%;
-        rotate: 7deg;
-        width: 100%;
-      }
-    }
-
-    &:nth-child(4) {
-      height: 256px;
-      width: 256px;
-      top: 60%;
-      left: 75%;
-
-      .hero-image-caption {
-        top: 50%;
-        left: -35%;
-        rotate: -9deg;
-        width: 100%;
+      left: 110%;
+      top: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+  
+      .cta-text {
+        font-family: $font-family-hand;
+        color: $color-white;
+        font-size: 1.25rem;
+        rotate: -15deg;
+        text-wrap: nowrap;
       }
     }
   }
-
-  .scroll-to {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  .hero-text {
+    margin-block-start: 1.5rem;
+    margin-block-end: 0;
+    font-size: 1.25rem;
+    color: $color-dark;
+    font-family: $font-family-hand;
+    font-weight: 400;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: $color-white;
-    transition: all 0.4s;
-
-    &:hover {
-      transform: translateY(20%);
-    }
-
-    .scroll-to-text {
-      display: block;
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-      font-family: $font-family-hand;
-      font-weight: 500;
-    }
-
-    .scroll-to-line {
-      background-color: $color-white;
-      display: block;
-      height: 32px;
-      margin: 0 auto;
-      position: relative;
-      transition: all 0.4s;
-      width: 2px;
-    }
-
-    .grow {
-      animation: grow 2s ease-in-out infinite;
-      transform-origin: bottom;
-    }
-
-    @keyframes grow {
-      0%,
-      20%,
-      50%,
-      80%,
-      to {
-        transform: scaleY(1.1);
-      }
-
-      40% {
-        transform: scaleY(0.666);
-      }
-
-      60% {
-        transform: scaleY(1.333);
-      }
-    }
+    text-wrap: wrap;
   }
 
-  .is-scrolled {
-    opacity: 0;
-  }
-
-  .about-me-cta {
-    align-self: center;
-    display: flex;
-  }
 }
