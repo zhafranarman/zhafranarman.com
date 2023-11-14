@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "./home/index";
+import Home from "./home/Index.jsx";
 
 const RoutesList = () => {
 
