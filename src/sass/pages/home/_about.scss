@@ -23,7 +23,6 @@
       }
 
       .about-image-frame {
-
         z-index: -3;
         position: relative;
         left: -10%;
@@ -71,21 +70,6 @@
           letter-spacing: -1px;
         }
       }
-    }
-
-    .about-me-cta {
-      top: 40%;
-      left: 80%;
-      position: absolute;
-      rotate: 4deg;
-      font-family: $font-family-hand;
-      font-size: 2rem;
-      cursor: pointer;
-      color: $color-white;
-      background-image: url(/src/assets/underline.svg);
-      background-position: bottom 0em left;
-      background-repeat: no-repeat;
-      background-size: 150% 0.2em;
     }
   }
 }

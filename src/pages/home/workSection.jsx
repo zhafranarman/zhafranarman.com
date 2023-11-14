@@ -58,7 +58,6 @@ const WorkSection = () => {
               <p className="project-desc">
                 I revamped the GCBME website in three months, enhancing both its design and information. The aim was to create an engaging, user-friendly platform.
               </p>
-              {/* <a className="project-cta">Learn More</a> */}
             </figcaption>
           </figure>
         </article>

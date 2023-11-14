@@ -24,7 +24,7 @@ const AboutSection = () => {
     visible: {
       y: "0",
       opacity: 1,
-      transition: { duration: 0.5 },
+      transition: { duration: 1 },
     }
   }
   const ctaAni = {
@@ -39,15 +39,15 @@ const AboutSection = () => {
     }
   }
 
-  const phrase = `During my teenage years, I was fascinated by technology and how it works. The potential for human-computer interaction amazed me. Now, I spend most of my time creating digital experiences for people.`
-  const phrase2 = "I am currently freelancing and on the lookout for exciting new opportunities! especially in the realms of design and frontend development. Ready to embark on the next chapter of creativity and innovation!"
+  const phrase = "During my teenage years, I was fascinated by how technology works, and the potential for human-computer interaction always amazed me. Now, I spend most of my time creating digital experiences for people."
+  const phrase2 = "I am currently freelancing and on the lookout for exciting new opportunities, especially in the realms of design and frontend development. Ready to embark on the next chapter of creativity and innovation!"
 
   return (
-    <section data-scroll data-scroll-section className="about-section container">
+    <section className="about-section container">
       <div data-scroll data-scroll-section className="about-content inner-section" ref={content}>
         <div className="about-heading">
           <motion.h2 variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title"><span className="about-title-row">Here’s the</span><span className="about-title-row">tl;dr on me</span></motion.h2>
-          <figure data-scroll data-scroll-speed="0.25" data-scroll-position="end, start" className="about-image-frame is-inview">
+          <figure data-scroll data-scroll-speed="0.15" data-scroll-position="end, start" className="about-image-frame is-inview">
             <img className="about-image" src={about_img} />
             <figcaption className="about-image-caption">
               Sometimes, I dig <br /> working in a chill place.
