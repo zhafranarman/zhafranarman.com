@@ -21,7 +21,7 @@
 
   .work-section-card {
     position: relative;
-    padding-block: 6rem;
+    padding-block: 10rem;
 
     .project-content {
       display: flex;
@@ -81,24 +81,4 @@
       }
     }
   }
-
-  // .work-section-card:nth-child(odd) {
-  //   .project-content {
-  //     flex-direction: row-reverse;
-
-  //     .project-thumbnail-wrapper {
-  //       .project-thumbnail {
-  //         rotate: 3deg;
-  //       }
-  //     }
-  //     .project-detail{
-  //       .project-name{
-  //         align-self: flex-end;
-  //       }
-  //       .project-cta{
-  //         left:10%
-  //       }
-  //     }
-  //   }
-  // }
 }
