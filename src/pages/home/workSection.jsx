@@ -6,25 +6,31 @@ import project1 from "../../assets/images/project/project-gcbme.webp"
 
 const WorkSection = () => {
 
-  const projectThumbnail = useRef();
-  const projectDesc = useRef();
+  const projectThumbnail = useRef([]);
+  projectThumbnail.current = [];
+
+  const projectDesc = useRef([]);
+  projectDesc.current = [];
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
-        gsap.from(projectThumbnail.current, {
-          scrollTrigger:{
-            trigger: projectThumbnail.current,
+      projectThumbnail.current.forEach((el) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
             start: "0px bottom",
             end: "bottom+=200px bottom",
             scrub: true,
           },
           xPercent: 30,
           rotate: 0,
-        });
-        gsap.from(projectDesc.current, {
-          scrollTrigger:{
-            trigger: projectDesc.current,
+        })
+      })
+      projectDesc.current.forEach((el2) => {
+        gsap.from(el2, {
+          scrollTrigger: {
+            trigger: el2,
             start: "0px bottom",
             end: "bottom+=200px bottom",
             scrub: true,
@@ -32,11 +38,23 @@ const WorkSection = () => {
           xPercent: -30,
           rotate: 0,
           opacity: 0.5,
-        });
-        
+        })
+      })
     });
     return () => ctx.revert();
-    }, [projectThumbnail.current]);
+  }, []);
+
+  const addtoRefThumb = (el) => {
+    if (el && !projectThumbnail.current.includes(el)) {
+      projectThumbnail.current.push(el);
+    }
+  }
+
+  const addtoRefsDesc = (el2) => {
+    if (el2 && !projectDesc.current.includes(el2)) {
+      projectDesc.current.push(el2);
+    }
+  }
 
   return (
     <section className="work-section container">
@@ -49,9 +67,24 @@ const WorkSection = () => {
         <article className="work-section-card">
           <figure className="project-content">
             <div className="project-thumbnail-wrapper">
-              <img ref={projectThumbnail} className="project-thumbnail" src={project1} height="500px" />
+              <img ref={addtoRefThumb} className="project-thumbnail" src={project1} height="500px" />
             </div>
-            <figcaption ref={projectDesc} className="project-detail">
+            <figcaption ref={addtoRefsDesc} className="project-detail">
+              <h4 className="project-name">
+                Web Development GCBME
+              </h4>
+              <p className="project-desc">
+                I revamped the GCBME website in three months, enhancing both its design and information. The aim was to create an engaging, user-friendly platform.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+        <article className="work-section-card">
+          <figure className="project-content">
+            <div className="project-thumbnail-wrapper">
+              <img ref={addtoRefThumb} className="project-thumbnail" src={project1} height="500px" />
+            </div>
+            <figcaption ref={addtoRefsDesc} className="project-detail">
               <h4 className="project-name">
                 Web Development GCBME
               </h4>

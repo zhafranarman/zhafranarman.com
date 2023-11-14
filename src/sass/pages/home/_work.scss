@@ -26,6 +26,7 @@
     .project-content {
       display: flex;
       flex-direction: row;
+      margin: 0;
 
       .project-thumbnail-wrapper {
         width: 50%;
@@ -81,23 +82,23 @@
     }
   }
 
-  .work-section-card:nth-child(odd) {
-    .project-content {
-      flex-direction: row-reverse;
+  // .work-section-card:nth-child(odd) {
+  //   .project-content {
+  //     flex-direction: row-reverse;
 
-      .project-thumbnail-wrapper {
-        .project-thumbnail {
-          rotate: 3deg;
-        }
-      }
-      .project-detail{
-        .project-name{
-          align-self: flex-end;
-        }
-        .project-cta{
-          left:10%
-        }
-      }
-    }
-  }
+  //     .project-thumbnail-wrapper {
+  //       .project-thumbnail {
+  //         rotate: 3deg;
+  //       }
+  //     }
+  //     .project-detail{
+  //       .project-name{
+  //         align-self: flex-end;
+  //       }
+  //       .project-cta{
+  //         left:10%
+  //       }
+  //     }
+  //   }
+  // }
 }
