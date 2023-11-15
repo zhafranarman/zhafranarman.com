@@ -1,7 +1,7 @@
 import React, { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import about_img from "../../assets/images/about.webp"
-import about_img2 from "../../assets/images/about2.webp"
+import about_img from "../../assets/images/about-image.webp"
+import about_img2 from "../../assets/images/about-image2.webp"
 
 const AboutSection = () => {
 
