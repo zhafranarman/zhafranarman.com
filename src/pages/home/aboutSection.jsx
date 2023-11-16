@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import { motion, useInView } from "framer-motion"
 import about_img from "../../assets/images/about-image.webp"
 import about_img2 from "../../assets/images/about-image2.webp"
@@ -48,29 +48,38 @@ const AboutSection = () => {
     }
   }
 
-  const phrase = `During my teenage years, I was fascinated by how technology works, and the potential for human-computer interaction always amazed me. Now, I spend most of my time creating digital experiences for people.`
-  const phrase2 = `I am currently freelancing and on the lookout for exciting new opportunities, especially in the realms of design and frontend development. Ready to embark on the next chapter of creativity and innovation!`
+  const phrase = `During my teenage years, I was fascinated by how technology works, and the potential for human-computer interaction always amazed me. Now, I spend most of my time creating digital experiences for people.\nI am currently freelancing and on the lookout for exciting new opportunities, especially in the realms of design and frontend development. Ready to embark on the next chapter of creativity and innovation!`
 
+  const [momiks, setMomiks] = useState([]);
 
   return (
     <section className="about-section container">
       <div data-scroll data-scroll-section className="about-content inner-section" ref={content}>
         <div className="about-column">
           <motion.h2 variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title"><span className="about-title-row">Here’s the</span><span className="about-title-row">tl;dr on me</span></motion.h2>
-          <p className="about-text">
+          <div className="about-text">
             {
-              phrase.split(" ").map((word, index) => {
-                return <span key={index} className="word-mask"><motion.span className="word" variants={wordAni} initial="hidden" animate={isInView ? "visible" : "hidden"} custom={index}>{word}&nbsp;</motion.span></span>
+              phrase.split('\n').map((paragraph, paragraphIndex) => {
+                return (
+                  <p key={paragraphIndex}>
+                    {paragraph.split(' ').map((word, index) => (
+                      <span key={index} className="word-mask">
+                        <motion.span
+                          className="word"
+                          variants={wordAni}
+                          initial="hidden"
+                          animate={isInView ? 'visible' : 'hidden'}
+                          custom={index}
+                        >
+                          {word}&nbsp;
+                        </motion.span>
+                      </span>
+                    ))}
+                  </p>
+                );
               })
             }
-          </p>
-          <p className="about-text">
-            {
-              phrase2.split(" ").map((word, index) => {
-                return <span key={index} className="word-mask"><motion.span className="word" variants={wordAni2} initial="hidden" animate={isInView ? "visible" : "hidden"} custom={index}>{word}&nbsp;</motion.span></span>
-              })
-            }
-          </p>
+          </div>
         </div>
         <div className="about-column">
           <figure data-scroll data-scroll-speed="0.15" className="about-image-frame is-inview">
@@ -88,7 +97,7 @@ const AboutSection = () => {
         </div>
         <motion.div className="about-cta" variants={ctaAni} initial="hidden" animate={isInView ? "visible" : "hidden"} >
           <a className="about-cta-text" href="#">
-            Read More About <br/> My Story
+            Read More About <br /> My Story
           </a>
           <svg width="154" height="53" viewBox="0 0 154 53" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M152.501 1.49756C140 40 109.5 57 69.9999 49.5C34.3565 42.7323 1.09785 6.56696 0.99986 6.5M0.99986 6.5C0.901866 6.43304 11.4999 3.5 21.4999 4.5M0.99986 6.5C0.901866 6.43304 0.999891 28 0.999891 28" stroke="white" strokeWidth="1.75" strokeLinecap="round" />
