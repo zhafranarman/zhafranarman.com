@@ -12,7 +12,7 @@
     .name {
       font-family: $font-family-accent;
       color: $color-white;
-      font-size: 12rem;
+      font-size: clamp( 90px, 13vw, 180px );;
       line-height: 0.9;
       position: relative;
     }
@@ -40,15 +40,49 @@
       background-image: url(src/assets/misc/frame-texture.webp);
       background-repeat: repeat;
 
+      @include media ("<=sm"){
+        width: 225px;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+
+      @include media (">sm", "<=lg"){
+        width: 300px;
+        padding: 1.5rem;
+        margin-top: 3rem;
+      }
+
       .hero-image {
         width: inherit;
         height: auto;
         position: relative;
         z-index: 1;
       }
+
+      .hero-text {
+        margin-block-start: 1.5rem;
+        margin-block-end: 0;
+        font-size: 1.25rem;
+        color: $color-dark;
+        font-family: $font-family-hand;
+        font-weight: 400;
+        text-align: center;
+        text-wrap: wrap;
+        
+        @include media ("<=sm"){
+          margin-block-start: 1rem;
+          font-size: 0.75rem;
+        }
+
+        @include media (">sm", "<=lg"){
+          margin-block-start: 1.25rem;
+          font-size: 1rem;
+        }
+
+      }
     }
     .hero-cta {
-  
+      
       position: absolute;
       left: 110%;
       top: 10%;
@@ -56,6 +90,14 @@
       flex-direction: column;
       align-items: center;
       gap: 2rem;
+
+      @include media ("<=sm"){
+        display: none;
+      }
+
+      @include media (">sm", "<lg"){
+        left: 100%;
+      }
   
       .cta-text {
         font-family: $font-family-hand;
@@ -65,16 +107,6 @@
         text-wrap: nowrap;
       }
     }
-  }
-  .hero-text {
-    margin-block-start: 1.5rem;
-    margin-block-end: 0;
-    font-size: 1.25rem;
-    color: $color-dark;
-    font-family: $font-family-hand;
-    font-weight: 400;
-    text-align: center;
-    text-wrap: wrap;
   }
 
 }
