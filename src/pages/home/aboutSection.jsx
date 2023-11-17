@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react"
+import React, { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import about_img from "../../assets/images/about-image.webp"
-import about_img2 from "../../assets/images/about-image2.webp"
+import about_img from "../../assets/images/Optimized/about1.webp"
+import about_img2 from "../../assets/images/Optimized/about2.webp"
 
 const AboutSection = () => {
 
@@ -11,20 +11,11 @@ const AboutSection = () => {
   const wordAni = {
     hidden: { y: "100%", opacity: 0, transition: { duration: 0.5 } },
     visible: (i) => ({
-      y: "0%",
+      y: "20%",
       opacity: 1,
-      transition: { duration: 0.5, delay: 0.02 * i }
+      transition: { duration: 0.5, delay: 0.025 * i }
     }),
   }
-  const wordAni2 = {
-    hidden: { y: "100%", opacity: 0, transition: { duration: 0.5 } },
-    visible: (i) => ({
-      y: "0%",
-      opacity: 1,
-      transition: { duration: 1, delay: 0.02 * i }
-    }),
-  }
-
   const titleAni = {
     hidden: {
       y: "30%",
@@ -49,8 +40,6 @@ const AboutSection = () => {
   }
 
   const phrase = `During my teenage years, I was fascinated by how technology works, and the potential for human-computer interaction always amazed me. Now, I spend most of my time creating digital experiences for people.\nI am currently freelancing and on the lookout for exciting new opportunities, especially in the realms of design and frontend development. Ready to embark on the next chapter of creativity and innovation!`
-
-  const [momiks, setMomiks] = useState([]);
 
   return (
     <section className="about-section container">
@@ -82,14 +71,14 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="about-column">
-          <figure data-scroll data-scroll-speed="0.15" className="about-image-frame is-inview">
-            <img className="about-image" src={about_img2} />
+          <figure data-scroll data-scroll-speed="0.08" className="about-image-frame is-inview">
+            <img className="about-image" src={about_img} alt="Photo of Muhammad Zhafran Arman and friends working on a project" height="325" width="325" loading="lazy" title="About Photo"/>
             <figcaption className="about-image-caption">
               Me and my friends, working on self initiated project.
             </figcaption>
           </figure>
-          <figure data-scroll data-scroll-speed="0.1" className="about-image-frame is-inview">
-            <img className="about-image" src={about_img} />
+          <figure data-scroll data-scroll-speed="0.09" className="about-image-frame is-inview">
+            <img className="about-image" src={about_img2} alt="Photo of Muhammad Zhafran Arman and working on a chill place" height="325" width="325" loading="lazy" title="About Photo"/>
             <figcaption className="about-image-caption">
               Sometimes, I dig <br /> working in a chill place.
             </figcaption>

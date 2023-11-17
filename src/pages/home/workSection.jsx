@@ -79,21 +79,6 @@ const WorkSection = () => {
             </figcaption>
           </figure>
         </article>
-        <article className="work-section-card">
-          <figure className="project-content">
-            <div className="project-thumbnail-wrapper">
-              <img ref={addtoRefThumb} className="project-thumbnail" src={project1} height="500px" />
-            </div>
-            <figcaption ref={addtoRefsDesc} className="project-detail">
-              <h4 className="project-name">
-                Web Development GCBME
-              </h4>
-              <p className="project-desc">
-                I revamped the GCBME website in three months, enhancing both its design and information. The aim was to create an engaging, user-friendly platform.
-              </p>
-            </figcaption>
-          </figure>
-        </article>
       </div>
     </section>
   );
