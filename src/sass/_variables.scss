@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+
 
 
 // Font
 $font-family-text: "Inter", sans-serif;
 $font-family-accent: "Instrument Serif", serif;
 $font-family-hand: "Mynerve" , sans-serif;
-$font-family-hand2: "Caveat" , sans-serif;
+
 
 // Color
 
-$color-dark: hsl(210, 13%, 5%);
+$color-dark: #0a0c0d;
 // $color-white: #F1EFEB;
 $color-white: hsl(210, 10%, 95%);
 $color-grey: hsl(210, 10%, 60%);
