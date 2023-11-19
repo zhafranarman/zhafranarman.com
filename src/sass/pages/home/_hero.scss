@@ -37,7 +37,7 @@
       //Pollaroid Frame
       padding: 1.75rem;
       border-radius: 0.15rem;
-      background-image: url(/src/assets/misc/polaroid-texture.png);
+      background-image: url(/src/assets/misc/texture.webp);
       background-repeat: repeat;
 
       @include media ("<=sm"){
@@ -47,7 +47,7 @@
       }
 
       @include media (">sm", "<=xl"){
-        width: 300px;
+        width: 250px;
         padding: 1.5rem;
         margin-top: 3rem;
       }
@@ -76,7 +76,7 @@
 
         @include media (">sm", "<=lg"){
           margin-block-start: 1.25rem;
-          font-size: 1rem;
+          font-size: 0.90rem;
         }
 
       }
