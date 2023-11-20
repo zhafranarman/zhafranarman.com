@@ -41,6 +41,11 @@
   max-width: 1280px;
   margin-inline: auto;
   padding-block: 8rem;
+
+  @include media ("<sm", "<=lg"){
+    padding-block: 2rem;
+
+  }
 }
 
 .grain {

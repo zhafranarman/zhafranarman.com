@@ -88,7 +88,7 @@ const AboutSection = () => {
           <a className="about-cta-text" href="#">
             Read More About <br /> My Story
           </a>
-          <svg width="154" height="53" viewBox="0 0 154 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="cta-arrow" width="154" height="53" viewBox="0 0 154 53" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M152.501 1.49756C140 40 109.5 57 69.9999 49.5C34.3565 42.7323 1.09785 6.56696 0.99986 6.5M0.99986 6.5C0.901866 6.43304 11.4999 3.5 21.4999 4.5M0.99986 6.5C0.901866 6.43304 0.999891 28 0.999891 28" stroke="white" strokeWidth="1.75" strokeLinecap="round" />
           </svg>
         </motion.div>
