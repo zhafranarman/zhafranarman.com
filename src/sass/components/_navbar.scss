@@ -3,15 +3,18 @@
   top: 0;
   width: 100%;
   z-index: 10;
+  backdrop-filter: blur(20px);
+  background-color: rgba(11, 13, 14, 0.1);
 
   .navbar {
-    padding-block: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: space-between;
 
     @include media("<=sm"){
       justify-content: center;
-      padding-block: 2rem;
+      padding-block: 1rem;
     }
   }
   .logo-wrapper {
