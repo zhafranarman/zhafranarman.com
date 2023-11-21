@@ -103,7 +103,7 @@
       }
 
       @include media("<=md") {
-        padding: 1rem;
+        padding: 0.75rem;
       }
 
       .about-image {
@@ -115,7 +115,7 @@
           height: auto;
         }
         @include media("<=md") {
-          width: 125px;
+          width: 150px;
           height: auto;
         }
       }

@@ -3,11 +3,11 @@ const Footer = () => {
     <footer className="container">
       <div className="subfooter">
         <div className="label">get in touch</div>
-        <a className="footer-mail">hello@zhafranarman.com</a>
+        <a className="footer-mail" href="mailto:hi@zhafranarman.com">hi@zhafranarman.com</a>
       </div>
       <div className="footer">
-        <div className="copyright">© Zhafran Arman 2023</div>
-        <ul className="social-links">
+        <div className="footer-column">Zhafran Arman © 2023</div>
+        <ul className="footer-column">
           <li>
             LinkedIn
           </li>
@@ -18,7 +18,7 @@ const Footer = () => {
             Instagram
           </li>
         </ul>
-        <div className="designby">Designed & Dev by Zhafran Arman</div>
+        <div className="footer-column">Designed & Dev by Zhafran Arman</div>
       </div>
     </footer>
   );

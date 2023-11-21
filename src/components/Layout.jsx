@@ -9,7 +9,7 @@ export default function Layout({children}) {
       <Grain/>
       <Navbar />
         {children}
-      {/* <Footer /> */}
+      <Footer />
     </SmoothScroll>
   );
 }

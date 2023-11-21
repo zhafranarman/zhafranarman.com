@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useLayoutEffect } from "react";
 
 import project1 from "../../assets/images/project/project-gcbme.webp"
+import project2 from "../../assets/images/project/project-ta.webp"
 
 const WorkSection = () => {
 
@@ -61,7 +62,7 @@ const WorkSection = () => {
       <div className="inner-section">
         <div className="work-section-heading">
           <h3 className="work-section-title">
-            Here is some of my work that I craft on the internet.
+            Here some of the cool stuff I've been working on lately.
           </h3>
         </div>
         <article className="work-section-card">
@@ -74,8 +75,25 @@ const WorkSection = () => {
                 Web Development GCBME
               </h4>
               <p className="project-desc">
-                I revamped the GCBME website in three months, enhancing both its design and information. The aim was to create an engaging, user-friendly platform.
+                GCBME is an annual conference hosted by Universitas Pendidikan Indonesia. I had the privilege of revamping the GCBME website, focusing on enhancing both its design and information. The goal was to create a platform that is engaging, informative, and user-friendly.
               </p>
+              <a className="project-cta" href="#">Read Case Study </a>
+            </figcaption>
+          </figure>
+        </article>
+        <article className="work-section-card">
+          <figure className="project-content">
+            <div className="project-thumbnail-wrapper">
+              <img ref={addtoRefThumb} className="project-thumbnail" src={project2} height="500px" />
+            </div>
+            <figcaption ref={addtoRefsDesc} className="project-detail">
+              <h4 className="project-name">
+                Bachelor's Research
+              </h4>
+              <p className="project-desc">
+              During the last semester of my college degree, I researched and worked on creating an enterprise architecture for an identity management system using the TOGAF framework. The goal of this research was to develop an architecture for identity management system to pave the way for a smart campus in the future.
+              </p>
+              <a className="project-cta" href="#">Read Case Study </a>
             </figcaption>
           </figure>
         </article>
