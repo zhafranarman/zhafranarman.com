@@ -1,5 +1,5 @@
 const Footer = () => {
-  return (  
+  return (
     <footer className="container">
       <div className="subfooter">
         <div className="label">get in touch</div>
@@ -8,14 +8,20 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-column">Zhafran Arman © 2023</div>
         <ul className="footer-column">
-          <li>
-            LinkedIn
+          <li >
+            <a href="https://www.linkedin.com/in/zhafranarman/" rel="noreferrer" target="_blank">
+              LinkedIn
+            </a>
           </li>
           <li>
-            Youtube
+            <a href="https://github.com/zhafranarman" rel="noreferrer" target="_blank">
+              Github
+            </a>
           </li>
           <li>
-            Instagram
+            <a href="https://www.instagram.com/zhafranarman" rel="noreferrer" target="_blank">
+              Instagram
+            </a>
           </li>
         </ul>
         <div className="footer-column">Designed & Dev by Zhafran Arman</div>
@@ -23,5 +29,5 @@ const Footer = () => {
     </footer>
   );
 }
- 
+
 export default Footer;

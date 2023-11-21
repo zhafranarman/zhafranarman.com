@@ -1,22 +1,26 @@
-footer{
+footer {
   color: $color-white;
-  padding-block: 2rem;
-  padding-inline: 2rem;
+  padding-block: 4rem;
+  padding-inline: 4rem;
 
-  .subfooter{
+  @include media ("<=sm"){
+    padding-inline: 0;
+  }
+
+  .subfooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
 
-    .label{
+    .label {
       font-size: 1.25rem;
       font-family: $font-family-text;
       text-transform: uppercase;
       margin-block: 2rem;
     }
-    .footer-mail{
+    .footer-mail {
       font-size: 42px;
       font-family: $font-family-accent;
       color: $color-white;
@@ -25,40 +29,59 @@ footer{
       padding: 24px 24px 16px;
       border-radius: 0.25em;
 
-      @include media ("<md"){
+      @include media("<md") {
         font-size: 30px;
       }
     }
   }
 
-  .footer{
+  .footer {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    border-top: solid 1px white;
-    padding-block: 1rem;
 
-    @include media ("<md"){
-      grid-row-gap: 4px;
-    text-align: center;
-    grid-template-columns: auto;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-
-
+    @include media("<md") {
+      grid-row-gap: 8px;
+      text-align: center;
+      grid-template-columns: auto;
+      place-items: center;
     }
 
-    .footer-column:nth-child(2){
+    .footer-column:nth-child(2) {
       display: flex;
       gap: 2rem;
       padding: 0;
+      margin: 0;
+
+      @include media ("<=md"){
+        gap: 10px;
+        margin-bottom: 1rem;
+        grid-area: 1/1/2/2;
+      }
+
+      li{
+        a{
+          color: $color-white;
+          text-decoration: underline;
+          text-underline-offset: 0.25rem;
+        }
+      }
     }
 
-    .footer-column:nth-child(3){
+    .footer-column:nth-child(3) {
       justify-self: end;
+
+      @include media ("<=sm"){
+        font-size: 10px;
+        justify-self: center;
+      }
+    }
+
+    .footer-column:nth-child(1) {
+      @include media ("<=sm"){
+        font-size: 10px;
+      }
     }
   }
 }

@@ -68,7 +68,7 @@ const WorkSection = () => {
         <article className="work-section-card">
           <figure className="project-content">
             <div className="project-thumbnail-wrapper">
-              <img ref={addtoRefThumb} className="project-thumbnail" src={project1} height="500px" />
+              <img ref={addtoRefThumb} className="project-thumbnail" src={project1} alt="Project Thumbnail of GCBME" height="460" width="520" loading="lazy" title="Project Thumbnail"/>
             </div>
             <figcaption ref={addtoRefsDesc} className="project-detail">
               <h4 className="project-name">
@@ -84,7 +84,7 @@ const WorkSection = () => {
         <article className="work-section-card">
           <figure className="project-content">
             <div className="project-thumbnail-wrapper">
-              <img ref={addtoRefThumb} className="project-thumbnail" src={project2} height="500px" />
+              <img ref={addtoRefThumb} className="project-thumbnail" src={project2} alt="Project Thumbnail of Bachelor's Research" height="460" width="520" loading="lazy" title="Project Thumbnail" />
             </div>
             <figcaption ref={addtoRefsDesc} className="project-detail">
               <h4 className="project-name">
