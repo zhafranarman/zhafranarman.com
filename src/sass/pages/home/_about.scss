@@ -50,6 +50,7 @@
       width: 90%;
       align-self: flex-end;
       margin-block: 0.5rem;
+      line-height: 1.5;
 
       @include media("<=md") {
         width: 100%;
@@ -58,10 +59,11 @@
       .word-mask {
         display: inline-flex;
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
 
         .word {
           font-size: 1.25rem;
+          line-height: 1.5;
           position: relative;
           letter-spacing: -1px;
 

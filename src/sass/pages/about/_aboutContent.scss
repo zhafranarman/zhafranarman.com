@@ -1,9 +1,70 @@
-.about-content-section{
-  .experience{
+.about-content-inner-section {
+  display: flex;
+  flex-direction: column;
+
+  .about-content-paragraph {
+    max-width: 50%;
+    margin-inline: auto;
     color: $color-white;
+    font-size: 1.25rem;
   }
-  .education{
-    color: $color-white;
-    
+  .experience {
+    margin-block: 5rem;
+    display: flex;
+    gap: 3rem;
+
+    .experience-column:nth-child(1) {
+      color: white;
+      font-size: 3rem;
+      width: 30%;
+      font-weight: 400;
+      font-family: $font-family-accent;
+    }
+    .experience-column:nth-child(2) {
+      color: white;
+      flex: 1;
+      display: block;
+
+      .experience-items {
+        margin-bottom: 5rem;
+
+        .experience-title {
+          font-size: 1.75rem;
+          font-weight: 500;
+        }
+
+        .experience-time{
+          font-size: 1.25rem;
+          margin-left: 1.5rem;
+        }
+        .experience-desc{
+          font-size: 1.125rem;
+          line-height: 1.5;
+        }
+        
+      }
+    }
+  }
+  .education {
+    margin-block: 5rem;
+    display: flex;
+    gap: 3rem;
+
+    .education-column:nth-child(1) {
+      color: white;
+      font-size: 3rem;
+      width: 30%;
+      font-weight: 400;
+      font-family: $font-family-accent;
+    }
+    .education-column:nth-child(2) {
+      color: white;
+      flex: 1;
+      display: block;
+
+      .education-items {
+        margin-bottom: 5rem;
+      }
+    }
   }
 }

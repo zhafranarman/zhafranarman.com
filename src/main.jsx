@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import SmoothScroll from './components/SmoothScroll.jsx'
 
 import './index.scss'
 
