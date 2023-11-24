@@ -4,13 +4,13 @@ const AboutContent = () => {
       <div className="inner-section about-content-inner-section">
         <div className="about-content-paragraph">
           <p>
-            Before I stepped into the world of product design, I was a web developer. One of my earliest jobs involved writing HTML emails, in a time before email linters. Lots of wishing, hoping, and finger crossing that your email arrived in a recipient's inbox in one piece.
+            Before I stepped into the world of UI/UX Design,I started my journey as a graphic designer. One of my initial job involved crafting designs for shirts, posters, and social media posts, a time when designer apps didn't offer an abundance of free templates. It was an enjoyable experience, though vastly different from my college department.
           </p>
           <p>
-            Coding emails forced me to understand how HTML and CSS play together, a skill set I've carried and kept fresh in the years since. My side project work is just an excuse to satisfy my curiosity about new technologies and understand how the web is moving forward.
+            The turning point in my design trajectory occurred when friends introduced me to the fascinating world of UI/UX Design. I found myself deeply enamored with the seamless blend of design principles and technological innovation. This newfound passion led me to become not only a frontend developer but also a dedicated UI/UX Designer, a dual role that I've diligently nurtured and refined over the years.
           </p>
           <p>
-            Outside work, I enjoy good coffee near my home by the sea, listening to and playing music, exploring the world with my partner, and playing with my Labrottie pup, Louie.
+            Beyond the digital canvas, my life takes on vibrant hues. I relish moments spent sipping a comforting cup of coffee, the rhythmic joy of both listening to and playing music, and embarking on adventures that unfold the diverse landscapes of our world alongside my partner."
           </p>
         </div>
         <article className="experience">
@@ -48,13 +48,8 @@ const AboutContent = () => {
           <div className="education-column">
             <div className="education-items">
               <span className="education-title">Institut Teknologi Nasional</span>
-              <span className="education-title">2016-2023</span>
-              <p>I had the privilege of revamping the GCBME website, focusing on enhancing both its design and information. The goal was to create a platform that is engaging, informative, and user-friendly.</p>
-            </div>
-            <div className="education-items">
-              <span className="education-title">TOGAF Certification</span>
-              <span className="education-title">(2023-2023)</span>
-              <p>I had the privilege of revamping the GCBME website, focusing on enhancing both its design and information. The goal was to create a platform that is engaging, informative, and user-friendly.</p>
+              <span className="education-time">(Bachelor's of Information System)</span>
+              <p className="education-desc">During my college years, my academic focus was on Information Systems. This dynamic field taught me the art of blending business with technology, emphasizing the creation of enterprise architecture and the design of holistic systems. Beyond textbooks, I gained hands-on experience in applying these concepts to craft innovative solutions at the intersection of business and technology.</p>
             </div>
           </div>
         </article>
