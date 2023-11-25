@@ -32,7 +32,7 @@
   }
 
   .mail-header{
-    font-size: 1.15rem;
+    font-size: $font-body-text;
     color: $color-white;
 
     @include media ("<=sm"){

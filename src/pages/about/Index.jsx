@@ -1,11 +1,20 @@
+import {Helmet} from "react-helmet-async"
+
+import Transition from "../../components/Transition";
 import AboutHeader from "./AboutHeader";
 import AboutContent from "./AboutContent";
 
 const About = () => {
   return (
     <>
-      <AboutHeader/>
-      <AboutContent/>
+    <Helmet prioritizeSeoTags>
+      <title>About Me — Zhafran Arman</title>
+      <link rel="canonical" href="https://zhafranarman.com/about" />
+    </Helmet>
+      <Transition>
+        <AboutHeader />
+        <AboutContent />
+      </Transition>
     </>
   );
 };

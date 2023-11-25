@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mynerve&display=swap");
 
 // Font
-$font-family-text: "Inter", sans-serif;
+$font-family-text: "Insrtument Sans", sans-serif;
 $font-family-accent: "Instrument Serif", serif;
-$font-family-hand: "Mynerve" , sans-serif;
-
+$font-family-hand: "Mynerve", sans-serif;
 
 // Color
 
 $color-dark: #0a0c0d;
-// $color-white: #F1EFEB;
-$color-white: hsl(210, 10%, 95%);
-$color-grey: hsl(210, 10%, 60%);
+$color-white: #e8ecf0;
 
 // Other Variables
 
 $shadow-color: 0deg 0% 0%;
+
+// Font Size Variables
+
+$font-body-text: clamp(1rem, 1.5vw, 1.25rem);
+$font-XXL: clamp(90px, 13vw, 180px);

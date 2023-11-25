@@ -1,9 +1,7 @@
 .hero-section {
-  height: auto;
   padding-top: 20vh;
   padding-bottom: 8rem;
   position: relative;
-  
 
   .hero-content {
     display: flex;
@@ -13,13 +11,13 @@
     .name {
       font-family: $font-family-accent;
       color: $color-white;
-      font-size: clamp( 90px, 13vw, 180px );;
-      line-height: 0.9;
+      font-size: $font-XXL;
+      line-height: 0.8;
       position: relative;
     }
     .name:nth-child(1) {
       z-index: 3;
-      text-shadow: -4px 4px 5px rgba(0, 0, 0, 0.25);
+      text-shadow: -4px 4px 10px rgba(0, 0, 0, 0.15);
     }
     .name:nth-child(2) {
       z-index: -1;
@@ -41,13 +39,13 @@
       background-image: url(/src/assets/misc/texture.webp);
       background-repeat: repeat;
 
-      @include media ("<=sm"){
+      @include media("<=sm") {
         width: 225px;
         padding: 1rem;
         margin-top: 2rem;
       }
 
-      @include media (">sm", "<=xl"){
+      @include media(">sm", "<=xl") {
         width: 250px;
         padding: 1.5rem;
         margin-top: 3rem;
@@ -69,21 +67,19 @@
         font-weight: 400;
         text-align: center;
         text-wrap: wrap;
-        
-        @include media ("<=sm"){
+
+        @include media("<=sm") {
           margin-block-start: 1rem;
           font-size: 0.75rem;
         }
 
-        @include media (">sm", "<=lg"){
+        @include media(">sm", "<=lg") {
           margin-block-start: 1.25rem;
-          font-size: 0.90rem;
+          font-size: 0.9rem;
         }
-
       }
     }
     .hero-cta {
-      
       position: absolute;
       left: 110%;
       top: 10%;
@@ -92,14 +88,14 @@
       align-items: center;
       gap: 2rem;
 
-      @include media ("<=sm"){
+      @include media("<=sm") {
         display: none;
       }
 
-      @include media (">sm", "<xl"){
+      @include media(">sm", "<xl") {
         left: 100%;
       }
-  
+
       .cta-text {
         font-family: $font-family-hand;
         color: $color-white;
@@ -109,5 +105,4 @@
       }
     }
   }
-
 }
