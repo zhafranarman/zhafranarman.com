@@ -2,20 +2,6 @@ const AboutContent = () => {
   return (
     <section className="container">
       <div className="inner-section">
-        <div className="about-content-paragraph">
-          <p>
-            Before I stepped into the world of UI/UX Design,I started my journey as a graphic designer. One of my initial job involved crafting designs for shirts, posters, and social media posts, a time when designer apps didn't offer an abundance of free templates. It was an enjoyable experience, though vastly different from my college department.
-          </p>
-          <p>
-            The turning point in my design trajectory occurred when my friends introduced me to the fascinating world of UI/UX Design. I found myself deeply enamored with the seamless blend of design principles and technological innovation. This newfound passion led me to become not only a frontend developer but also a dedicated UI/UX Designer, a dual role that I've diligently nurtured and refined over the years.
-          </p>
-          <p>
-            Beyond the digital canvas, i enjoy a good cup of coffee, grooving to music—sometimes even playing some tunes myself. And I love spending time with my friends and family and go on spontaneous adventures. Just everyday stuff, you know?
-          </p>
-        </div>
-      </div>
-      <div className="inner-section">
-
         <article className="experience">
           <div className="experience-column">
             Experience
