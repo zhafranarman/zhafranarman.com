@@ -1,0 +1,23 @@
+.work-content-container {
+  box-sizing: border-box;
+  padding-block: 12svh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .work-card-container {
+    height: 75svh;
+    display: grid;
+    place-items: center;
+    position: sticky;
+    top: 12svh;
+
+    .work-card {
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      border-radius: 0.5rem;
+      margin: 0;
+    }
+  }
+}

@@ -1,9 +1,9 @@
-import { AnimatePresence } from "framer-motion";
-
-import React from "react";
 import { Route, Routes, useLocation, } from "react-router-dom";
+
+
 import Home from "./home/Index.jsx";
 import About from "./about/Index.jsx";
+import Work from "./work/Index.jsx";
 
 
 
@@ -15,6 +15,7 @@ const RoutesList = () => {
     <Routes location={location} key={location.pathname}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="work" element={<Work />} />
     </Routes>
 
   )
