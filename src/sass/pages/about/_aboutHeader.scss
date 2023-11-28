@@ -16,25 +16,41 @@
     display: flex;
     justify-content: space-around;
 
+    @include media ("<=md"){
+      flex-direction: column;
+    }
+
     .about-header-image {
       width: 350px;
       height: max-content;
       border-radius: 1.5rem;
+
+      @include media ("<=md"){
+        width: 250px;
+        align-self: center;
+      }
     }
 
     .about-header-content {
       width: 50%;
+      @include media ("<=md"){
+        width: 100%;
+      }
 
       .about-header-title {
         color: $color-white;
-        font-size: 3.5rem;
+        font-size: $font-XL;
         line-height: 1.1;
         font-family: $font-family-accent;
         font-weight: 400;
+
+        @include media ("<=md"){
+          text-align: center;
+        }
       }
       .about-header-text {
-        font-size: 1.25rem;
-        color: $color-white;
+        font-size: $font-body-text;
+        color: $color-light-grey;
       }
     }
   }

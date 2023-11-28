@@ -2,32 +2,51 @@
   display: flex;
   justify-content: space-around;
 
+  @include media ("<=md"){
+    flex-direction: column;
+  }
+
   .experience-column:nth-child(1) {
     color: white;
-    font-size: 3rem;
+    font-size: $font-XL;
     width: 30%;
     font-weight: 400;
     font-family: $font-family-accent;
+
+    @include media ("<=md"){
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
   .experience-column:nth-child(2) {
     color: white;
     width: 60%;
     display: block;
 
+    @include media ("<=md"){
+      width: 100%;
+    }
+
     .experience-items {
       margin-bottom: 5rem;
+      @include media ("<=md"){
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: solid 1px $color-light-grey;
+      }
 
       .experience-title {
-        font-size: 1.75rem;
+        font-size: $font-Medium;
         font-weight: 500;
       }
 
       .experience-time {
-        font-size: 1.25rem;
+        font-size: $font-body-text;
         margin-left: 1.5rem;
       }
       .experience-desc {
-        font-size: 1.125rem;
+        font-size: $font-body-text;
         line-height: 1.5;
         width: fit-content;
         color: $color-light-grey;
@@ -35,38 +54,59 @@
     }
   }
 }
+
 .education {
-  padding-top: 0;
   display: flex;
   justify-content: space-around;
 
+  @include media ("<=md"){
+    flex-direction: column;
+  }
+
   .education-column:nth-child(1) {
-    color: $color-white;
-    font-size: 3rem;
+    color: white;
+    font-size: $font-XL;
     width: 30%;
     font-weight: 400;
     font-family: $font-family-accent;
+
+    @include media ("<=md"){
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
   .education-column:nth-child(2) {
-    color: $color-white;
+    color: white;
     width: 60%;
     display: block;
 
+    @include media ("<=md"){
+      width: 100%;
+    }
+
     .education-items {
       margin-bottom: 5rem;
+      @include media ("<=md"){
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: solid 1px $color-light-grey;
+      }
 
       .education-title {
-        font-size: 1.75rem;
+        font-size: $font-Medium;
         font-weight: 500;
       }
 
       .education-time {
-        font-size: 1.25rem;
+        font-size: $font-body-text;
         margin-left: 1.5rem;
       }
       .education-desc {
-        font-size: 1.125rem;
+        font-size: $font-body-text;
         line-height: 1.5;
+        width: fit-content;
+        color: $color-light-grey;
       }
     }
   }
