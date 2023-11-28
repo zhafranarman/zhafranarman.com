@@ -24,7 +24,7 @@ const WorkSection = () => {
             end: "bottom+=200px bottom",
             scrub: true,
           },
-          xPercent: 30,
+          xPercent: 20,
           rotate: 0,
         })
       })
@@ -36,7 +36,7 @@ const WorkSection = () => {
             end: "bottom+=200px bottom",
             scrub: true,
           },
-          xPercent: -30,
+          xPercent: -20,
           rotate: 0,
           opacity: 0.5,
         })

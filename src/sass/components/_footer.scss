@@ -1,7 +1,8 @@
 footer {
   color: $color-white;
-  padding-block: 4rem;
+  padding-bottom: 4rem;
   padding-inline: 4rem;
+  box-sizing: border-box;
 
   @include media ("<=sm"){
     padding-inline: 0;
@@ -15,9 +16,10 @@ footer {
     margin-bottom: 4rem;
 
     .label {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       font-family: $font-family-text;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
       margin-block: 2rem;
     }
     .footer-mail {
@@ -28,6 +30,7 @@ footer {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 24px 24px 16px;
       border-radius: 0.25em;
+      border: solid 0.25px rgba(51, 51, 51, 0.25);
 
       @include media("<md") {
         font-size: 30px;
@@ -55,7 +58,8 @@ footer {
       margin: 0;
 
       @include media ("<=md"){
-        gap: 10px;
+        justify-content: space-between;
+        gap: 1rem;
         margin-bottom: 1rem;
         grid-area: 1/1/2/2;
       }

@@ -1,11 +1,12 @@
 .about-header {
-  padding-top: 15svh;
+  padding-top: 20svh;
   display: flex;
   flex-direction: column;
+  padding-bottom: 0;
 
   .about-header-column:nth-child(1) {
     font-family: $font-family-accent;
-    font-size: clamp(3.2rem, 0.5692rem + 8.238vw, 13.75rem);
+    font-size: $font-XXL;
     color: $color-white;
     align-self: center;
     margin-bottom: 3rem;
@@ -26,7 +27,7 @@
 
       .about-header-title {
         color: $color-white;
-        font-size: 3rem;
+        font-size: 3.5rem;
         line-height: 1.1;
         font-family: $font-family-accent;
         font-weight: 400;

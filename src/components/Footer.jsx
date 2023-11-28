@@ -23,6 +23,11 @@ const Footer = () => {
               Instagram
             </a>
           </li>
+          <li>
+            <a href="https://www.behance.net/zhafranarman" rel="noreferrer" target="_blank">
+              Bēhance
+            </a>
+          </li>
         </ul>
         <div className="footer-column">Designed & Dev by Zhafran Arman</div>
       </div>

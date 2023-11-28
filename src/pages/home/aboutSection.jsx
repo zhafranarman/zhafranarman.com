@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import {NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import about_img from "../../assets/images/Optimized/about1.webp"
 import about_img2 from "../../assets/images/Optimized/about2.webp"
 
@@ -70,29 +70,26 @@ const AboutSection = () => {
               })
             }
           </div>
+          <motion.div className="about-cta" variants={ctaAni} initial="hidden" animate={isInView ? "visible" : "hidden"} >
+            <Link to="/about" className="about-cta-text" href="#">
+              Read My Story
+            </Link>
+          </motion.div>
         </div>
         <div className="about-column">
           <figure data-scroll data-scroll-speed="0.08" className="about-image-frame is-inview">
-            <img className="about-image" src={about_img} alt="Photo of Muhammad Zhafran Arman and friends working on a project" height="325" width="325" loading="lazy" title="About Photo"/>
+            <img className="about-image" src={about_img} alt="Photo of Muhammad Zhafran Arman and friends working on a project" height="325" width="325" loading="lazy" title="About Photo" />
             <figcaption className="about-image-caption">
               Me and my friends, working on self initiated project.
             </figcaption>
           </figure>
           <figure data-scroll data-scroll-speed="0.09" className="about-image-frame is-inview">
-            <img className="about-image" src={about_img2} alt="Photo of Muhammad Zhafran Arman and working on a chill place" height="325" width="325" loading="lazy" title="About Photo"/>
+            <img className="about-image" src={about_img2} alt="Photo of Muhammad Zhafran Arman and working on a chill place" height="325" width="325" loading="lazy" title="About Photo" />
             <figcaption className="about-image-caption">
               Sometimes, I dig <br /> working in a chill place.
             </figcaption>
           </figure>
         </div>
-        <motion.div className="about-cta" variants={ctaAni} initial="hidden" animate={isInView ? "visible" : "hidden"} >
-          <NavLink to="/about" preventScrollReset={false} className="about-cta-text" href="#">
-            Read More About <br /> My Story
-          </NavLink>
-          <svg className="cta-arrow" width="154" height="53" viewBox="0 0 154 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M152.501 1.49756C140 40 109.5 57 69.9999 49.5C34.3565 42.7323 1.09785 6.56696 0.99986 6.5M0.99986 6.5C0.901866 6.43304 11.4999 3.5 21.4999 4.5M0.99986 6.5C0.901866 6.43304 0.999891 28 0.999891 28" stroke="white" strokeWidth="1.75" strokeLinecap="round" />
-          </svg>
-        </motion.div>
       </div>
     </section>
   );
