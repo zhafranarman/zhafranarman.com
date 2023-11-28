@@ -7,11 +7,17 @@
   }
 
   .experience-column:nth-child(1) {
-    color: white;
-    font-size: $font-XL;
     width: 30%;
-    font-weight: 400;
-    font-family: $font-family-accent;
+    padding-bottom: 6%;
+    
+    .experience-text{
+      position: sticky;
+      top: 8%;
+      color: white;
+      font-size: $font-XL;
+      font-weight: 400;
+      font-family: $font-family-accent;
+    }
 
     @include media ("<=md"){
       text-align: center;

@@ -4,7 +4,9 @@ const AboutContent = () => {
       <div className="inner-section">
         <article className="experience">
           <div className="experience-column">
-            Experience
+            <span className="experience-text">
+              Experience
+            </span>
           </div>
           <div className="experience-column">
             <div className="experience-items">
@@ -35,7 +37,9 @@ const AboutContent = () => {
       </div>
       <article className="inner-section education">
         <div className="education-column">
-          Education
+          <span className="education-text">
+            Education
+          </span>
         </div>
         <div className="education-column">
           <div className="education-items">
