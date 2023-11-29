@@ -15,6 +15,7 @@ const WorkContent = () => {
               <p className="work-card-desc">
                 GCBME is an annual conference hosted by Universitas Pendidikan Indonesia. I had the privilege of revamping the GCBME website, focusing on enhancing both its design and information. The goal was to create a platform that is engaging, informative, and user-friendly.
               </p>
+              <a className="work-card-cta">Read Case Study</a>
             </figcaption>
             <div className="work-card-wrapper">
               <img src={work1} className="work-card-image" />
@@ -31,6 +32,7 @@ const WorkContent = () => {
                 Bachelor's Research
                 During the last semester of my college degree, I researched and worked on creating an enterprise architecture for an identity management system using the TOGAF framework. The goal of this research was to develop an architecture for identity management system to pave the way for a smart campus in the future.
               </p>
+              <a className="work-card-cta">Read Case Study</a>
             </figcaption>
             <div className="work-card-wrapper">
               <img src={work2} className="work-card-image" />
@@ -47,6 +49,7 @@ const WorkContent = () => {
                 Bachelor's Research
                 During the last semester of my college degree, I researched and worked on creating an enterprise architecture for an identity management system using the TOGAF framework. The goal of this research was to develop an architecture for identity management system to pave the way for a smart campus in the future.
               </p>
+              <a className="work-card-cta">Read Case Study</a>
             </figcaption>
             <div className="work-card-wrapper">
               <img src={work3} className="work-card-image" />

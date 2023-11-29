@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import NavbarButton from "./NavbarButton";
 import NavbarMobile from "./NavbarMobile";
+import NavbarMenu from "./NavbarMenu";
 
 function useScrollDirection() {
 
@@ -45,7 +46,7 @@ const Navbar = () => {
 
   return (
     // <header className={`header ${scrollDirection === "down" ? "hide" : "show"}`}>
-      <header className="header">
+    <header className="header">
       {/* </header> */}
       <m.nav className="container navbar" variants={navbarAni} initial="hidden" animate="visible">
         <NavLink to="/" className="logo-wrapper">
@@ -64,19 +65,15 @@ const Navbar = () => {
             <path d="M155.609 6.36934C154.967 6.7898 154.495 7.34661 154.194 8.0398H154.032V5.90911H151.586V19H154.134V11.2273C154.134 10.5341 154.265 9.9432 154.526 9.45457C154.793 8.96025 155.154 8.58525 155.609 8.32957C156.069 8.07389 156.594 7.94605 157.185 7.94605C158.049 7.94605 158.728 8.21593 159.222 8.7557C159.717 9.2898 159.964 10.0313 159.964 10.9801V19H162.512V10.6733C162.512 9.59377 162.327 8.68752 161.958 7.95457C161.589 7.22161 161.069 6.67048 160.398 6.30116C159.728 5.92616 158.947 5.73866 158.055 5.73866C157.072 5.73866 156.256 5.94889 155.609 6.36934Z" />
           </svg>
         </NavLink>
-        <ul className="nav-menu">
-          <li><NavLink className="nav-links" to="/about">About</NavLink></li>
-          <li><NavLink className="nav-links" to="/work">Work</NavLink></li>
-          <li>
-            <a className="nav-links" href="mailto:hi@zhafranarman.com">Let's Talk</a>
-          </li>
-        </ul>
+        <div className="nav-menu-desktop">
+          <NavbarMenu />
+        </div>
         <NavbarButton
           menuActive={menuActive}
           onClick={() => setSidebarState((a) => !a)}
         />
-      <NavbarMobile menuActive={menuActive} />
       </m.nav>
+      <NavbarMobile menuActive={menuActive} />
     </header>
   );
 }
