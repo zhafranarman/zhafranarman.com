@@ -1,23 +1,83 @@
 .work-content-container {
   box-sizing: border-box;
-  padding-block: 12svh;
+  padding-top: 12svh;
+  margin-bottom: 12svh;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
 
   .work-card-container {
-    height: 75svh;
     display: grid;
     place-items: center;
     position: sticky;
     top: 12svh;
 
     .work-card {
+      box-sizing: border-box;
       height: 100%;
       width: 100%;
-      background-color: white;
-      border-radius: 0.5rem;
+      border-radius: 1rem;
       margin: 0;
+      display: flex;
+      border: solid 1px #333333;
+
+      @include media("<=md") {
+        flex-direction: column;
+      }
+
+      .work-card-wrapper {
+        border-radius: 0rem 1rem 1rem 0rem;
+        width: 55%;
+        
+
+        @include media("<=md") {
+          width: 100%;
+          height: 60%;
+          border-radius: 0rem 0rem 1rem 1rem;
+        }
+      }
+      .work-card-image {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+      }
+
+      .work-card-info {
+        flex: 1;
+        box-sizing: border-box;
+        color: $color-white;
+        padding: 4rem;
+        border-radius: 0.5rem;
+        border-radius: 1rem 0rem 0rem 1rem;
+        background-color: #0a0c0df0;
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include media("<=md") {
+          width: 100%;
+          padding: 2rem;
+          border-radius: 1rem 1rem 0rem 0rem;
+        }
+
+        .work-card-title {
+          font-family: $font-family-accent;
+          font-size: $font-L;
+          font-weight: 400;
+          margin: 0;
+        }
+
+        .work-card-desc {
+          font-size: $font-body-text;
+        }
+      }
+    }
+  }
+
+  @for $i from 1 through 5 {
+    .work-card-container:nth-child(#{$i}) {
+      top: calc(12svh + calc($i * 30px));
     }
   }
 }

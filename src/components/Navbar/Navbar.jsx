@@ -44,7 +44,9 @@ const Navbar = () => {
   const scrollDirection = useScrollDirection();
 
   return (
-    <header className={`header ${scrollDirection === "down" ? "hide" : "show"}`}>
+    // <header className={`header ${scrollDirection === "down" ? "hide" : "show"}`}>
+      <header className="header">
+      {/* </header> */}
       <m.nav className="container navbar" variants={navbarAni} initial="hidden" animate="visible">
         <NavLink to="/" className="logo-wrapper">
           <svg className="logo" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" width="100%" height="100%" viewBox="0 0 163 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +67,6 @@ const Navbar = () => {
         <ul className="nav-menu">
           <li><NavLink className="nav-links" to="/about">About</NavLink></li>
           <li><NavLink className="nav-links" to="/work">Work</NavLink></li>
-          <li><NavLink className="nav-links" to="/blog">Thoughts</NavLink></li>
           <li>
             <a className="nav-links" href="mailto:hi@zhafranarman.com">Let's Talk</a>
           </li>
