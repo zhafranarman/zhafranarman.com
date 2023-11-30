@@ -5,6 +5,7 @@ import work3 from "../../assets/images/Optimized/work-page-Indococotama.webp"
 const WorkContent = () => {
   return (
     <section className="container work-content">
+      <h1 className="hidden-h1">List of Zhafran's Work</h1>
       <div className="work-content-container inner-section">
         <article className="work-card-container">
           <figure className="work-card">
@@ -18,7 +19,7 @@ const WorkContent = () => {
               <a className="work-card-cta">Read Case Study</a>
             </figcaption>
             <div className="work-card-wrapper">
-              <img src={work1} className="work-card-image" />
+              <img src={work1} className="work-card-image" alt="Project Thumbnail of GCBME" height="600" width="700" loading="eager" title="Project Thumbnail of GCBME" />
             </div>
           </figure>
         </article>
@@ -35,7 +36,7 @@ const WorkContent = () => {
               <a className="work-card-cta">Read Case Study</a>
             </figcaption>
             <div className="work-card-wrapper">
-              <img src={work2} className="work-card-image" />
+              <img src={work2} className="work-card-image" alt="Project Thumbnail of My Bachelor Research" height="600" width="700" loading="eager" title="Project Thumbnail of Bachelor Research" />
             </div>
           </figure>
         </article>
@@ -52,7 +53,7 @@ const WorkContent = () => {
               <a className="work-card-cta">Read Case Study</a>
             </figcaption>
             <div className="work-card-wrapper">
-              <img src={work3} className="work-card-image" />
+              <img src={work3} className="work-card-image" alt="Project Thumbnail of Indococotama" height="600" width="700" loading="eager" title="Project Thumbnail of Indococotama" />
             </div>
           </figure>
         </article>

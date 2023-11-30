@@ -93,7 +93,7 @@ const WorkSection = () => {
               <p className="project-desc">
               During the last semester of my college degree, I researched and worked on creating an enterprise architecture for an identity management system using the TOGAF framework. The goal of this research was to develop an architecture for identity management system to pave the way for a smart campus in the future.
               </p>
-              <a className="project-cta" href="#">Read Case Study </a>
+              <a className="project-cta" href="google.com">Read Case Study </a>
             </figcaption>
           </figure>
         </article>

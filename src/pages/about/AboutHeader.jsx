@@ -8,7 +8,7 @@ const AboutHeader = () => {
           I'm Zhafran
         </div>
         <div className="about-header-column">
-          <img className="about-header-image" src={about_photos} />
+          <img className="about-header-image" src={about_photos} alt="Photo of Muhammad Zhafran Arman and friends working on a project" height="350" width="350" loading="eager" title="About Photo Header" />
           <div className="about-header-content">
             <h1 className="about-header-title">
               I'm a UI/UX Designer & Frontend Developer from Bandung, Indonesia.
