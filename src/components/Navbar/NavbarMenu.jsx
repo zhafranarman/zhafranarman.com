@@ -9,6 +9,7 @@ const NavbarMenu = () => {
       <li><NavLink className={`nav-links ${pathname === "/about" ? 'active' : ''}`} to="/about">About</NavLink></li>
       <li><NavLink className={`nav-links ${pathname === "/work" ? 'active' : ''}`}to="/work">Work</NavLink></li>
       <li>
+        <div className="availibility" />
         <a className="nav-links" href="mailto:hi@zhafranarman.com">Open to Work</a>
       </li>
     </ul>
