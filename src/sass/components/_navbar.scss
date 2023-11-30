@@ -87,11 +87,23 @@
       font-size: 1.125rem;
       color: $color-white;
       font-family: $font-family-text;
+      background-image: url(/src/assets/underline.svg);
+      background-position: bottom -1px left;
+      background-repeat: no-repeat;
+      background-size: 0% 0.2em;
+      transition: all 0.2s $animation-ease;
+
+      &:hover{
+        background-size: 100% 0.2em;
+      }
 
       @include media("<=sm") {
         font-size: 1.125rem;
-        border-bottom: solid 1px $color-white;
       }
+    }
+
+    .nav-links.active{
+      background-size: 100% 0.2em;
     }
   }
 
