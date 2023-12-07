@@ -14,7 +14,7 @@ const AboutSection = () => {
     visible: (i) => ({
       y: "20%",
       opacity: 1,
-      transition: { duration: 0.5, delay: 0.025 * i }
+      transition: { duration: 0.5, delay: 0.015 * i }
     }),
   }
   const titleAni = {
@@ -40,33 +40,22 @@ const AboutSection = () => {
     }
   }
 
-  const phrase = `During my teenage years, I was fascinated by how technology works, and the potential for human-computer interaction always amazed me. Now, I spend most of my time creating digital experiences for people.\nI am currently freelancing and on the lookout for exciting new opportunities, especially in the realms of design and frontend development. Ready to embark on the next chapter of creativity and innovation!`
+  const phrase = `Over the past 9+ years, I've worked in various areas of digital design, including front-end development and UI/UX Design. I take pride in wearing many hats. I am currently freelancing and on the lookout for new opportunities, especially in the realms of design and frontend development. Ready to embark on the next chapter of creativity and innovation!`
 
   return (
     <section className="about-section container">
       <div data-scroll data-scroll-section className="about-content inner-section" ref={content}>
         <div className="about-column">
-          <motion.h2 variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title"><span className="about-title-row">Here’s the</span><span className="about-title-row">tl;dr on me</span></motion.h2>
+          <motion.h2 variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title">
+            <span className="about-title-row">Here’s the</span>
+            <span className="about-title-row">
+              <span className="color-accent">tl;dr </span>on me
+            </span>
+          </motion.h2>
           <div className="about-text">
             {
-              phrase.split('\n').map((paragraph, paragraphIndex) => {
-                return (
-                  <p key={paragraphIndex}>
-                    {paragraph.split(' ').map((word, index) => (
-                      <span key={index} className="word-mask">
-                        <motion.span
-                          className="word"
-                          variants={wordAni}
-                          initial="hidden"
-                          animate={isInView ? 'visible' : 'hidden'}
-                          custom={index}
-                        >
-                          {word}&nbsp;
-                        </motion.span>
-                      </span>
-                    ))}
-                  </p>
-                );
+              phrase.split(" ").map((word, index) => {
+                return <span key={index} className="word-mask"><motion.span className="word" variants={wordAni} initial="hidden" animate={isInView ? "visible" : "hidden"} custom={index}>{word}&nbsp;</motion.span></span>
               })
             }
           </div>

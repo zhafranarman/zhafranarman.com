@@ -11,13 +11,13 @@
     .name {
       font-family: $font-family-accent;
       color: $color-white;
-      font-size: $font-XXL;
+      font-size: $font-size-XXXL;
       line-height: 0.8;
       position: relative;
     }
     .name:nth-child(1) {
       z-index: 3;
-      text-shadow: -4px 4px 10px rgba(0, 0, 0, 0.15);
+      text-shadow: -4px 4px 10px #0a0c0d26;
     }
     .name:nth-child(2) {
       z-index: -1;
@@ -61,7 +61,7 @@
       .hero-text {
         margin-block-start: 1.5rem;
         margin-block-end: 0;
-        font-size: 1.25rem;
+        font-size: $font-size-XS;
         color: $color-dark;
         font-family: $font-family-hand;
         font-weight: 400;
@@ -70,12 +70,10 @@
 
         @include media("<=sm") {
           margin-block-start: 1rem;
-          font-size: 0.75rem;
         }
 
         @include media(">sm", "<=lg") {
           margin-block-start: 1.25rem;
-          font-size: 0.9rem;
         }
       }
     }
@@ -99,7 +97,7 @@
       .cta-text {
         font-family: $font-family-hand;
         color: $color-white;
-        font-size: 1.25rem;
+        font-size: $font-size-M;
         rotate: -15deg;
         text-wrap: nowrap;
       }

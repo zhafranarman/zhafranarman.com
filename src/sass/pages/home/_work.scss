@@ -17,13 +17,9 @@
       margin: 0;
       font-family: $font-family-accent;
       font-weight: 400;
-      font-size: 3rem;
+      font-size: $font-size-XL;
       line-height: 1.2;
       text-align: center;
-
-      @include media ("<=md") {
-        font-size: 2.5rem;
-      }
     }
   }
 
@@ -57,6 +53,7 @@
 
         .project-thumbnail {
           position: relative;
+          z-index: 2;
           width: 460px;
           height: auto;
           border-radius: 1rem;
@@ -76,7 +73,6 @@
         flex-direction: column;
         justify-content: center;
         position: relative;
-        z-index: -1;
 
         @include media ("<=md"){
           width: 100%;
@@ -85,36 +81,34 @@
         }
 
         .project-name {
-          font-size: 3rem;
+          font-size: $font-size-L;
           line-height: 1.2;
           font-family: $font-family-accent;
           font-weight: 400;
           margin-block: 1.5rem;
-
-          @include media ("<=md"){
-            font-size: 2.5rem;
-          }
         }
         
         .project-desc {
-          font-size: 1.25rem;
+          font-size: $font-size-M;
           font-family: $font-family-text;
-          @include media ("<=md"){
-            font-size: 1rem;
-          }
+          color: $color-light-grey;
         }
 
         .project-cta {
           margin-block: 1.5rem;
           width: max-content;
           font-family: $font-family-hand;
-          font-size: 1.25rem;
+          font-size: $font-size-M;
           cursor: pointer;
           color: $color-white;
           background-image: url(/src/assets/underline.svg);
           background-position: bottom 0em left;
           background-repeat: no-repeat;
           background-size: 150% 0.2em;
+
+          &:hover{
+            animation: cta-hover 0.5s $animation-ease;
+          }
         }
       }
     }

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mynerve&display=swap");
 
 // Font
-$font-family-text: "Insrtument Sans", sans-serif;
+$font-family-text: "Instrument Sans", sans-serif;
 $font-family-accent: "Instrument Serif", serif;
 $font-family-hand: "Mynerve", sans-serif;
 
@@ -11,18 +11,29 @@ $font-family-hand: "Mynerve", sans-serif;
 
 $color-dark: #0a0c0d;
 $color-white: #e8ecf0;
-$color-light-grey: hsl(210, 21%, 85%);
-$color-grey: #a3b3c2;
+$color-light-grey: #bfbfbf;
+$color-grey: #373737;
+$color-accent: #e8ecf0;
 
 // Other Variables
 
 $shadow-color: 0deg 0% 0%;
-$animation-ease: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-ease: cubic-bezier(.215,.61,.355,1);
 
 // Font Size Variables
 
-$font-body-text: clamp(1rem, 1.5vw, 1.25rem);
-$font-XXL: clamp(80px, 13vw, 180px);
-$font-XL: clamp(2.25rem, 5vw ,3.5rem);
+$font-size-XXXL : clamp(5.5rem, 3.5rem + 10.25vw, 11.125rem);
+$font-size-XXL:clamp(4rem, 1rem + 6.5vw, 5rem);
+$font-size-XL:clamp(3rem, 1rem + 5vw, 4rem);
+$font-size-L:clamp(2.5rem, 1rem + 3vw, 3rem);
+$font-size-M:clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+$font-size-S:clamp(1rem, 1rem + 0.1vw, 1.25rem);
+$font-size-XS: clamp(0.83rem, 0.6em + 0.6087vw, 1.25rem);
+
+
+// Before 
+$font-XXL: clamp(5.5rem, 3.6016rem + 10.2543vw, 11.125rem);
+$font-body-text: clamp(1.0669rem, 1.0467rem + 0.1011vw, 1.125rem);
+$font-XL: clamp(4rem, 3.5rem + 6.5vw, 5rem);
 $font-L: clamp(2rem, 3vw ,3rem);
 $font-Medium:clamp(1.25rem , 2vw , 1.75rem);

@@ -68,19 +68,19 @@
 
         .work-card-title {
           font-family: $font-family-accent;
-          font-size: $font-L;
+          font-size: $font-size-L;
           font-weight: 400;
           margin: 0;
         }
 
         .work-card-desc {
-          font-size: $font-body-text;
+          font-size: $font-size-S;
         }
         .work-card-cta {
           margin-top: 2rem;
           width: max-content;
           font-family: $font-family-hand;
-          font-size: 1.25rem;
+          font-size: $font-size-M;
           cursor: pointer;
           color: $color-white;
           background-image: url(/src/assets/underline.svg);

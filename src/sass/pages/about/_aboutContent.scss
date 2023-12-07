@@ -14,7 +14,7 @@
       position: sticky;
       top: 8%;
       color: white;
-      font-size: $font-XL;
+      font-size: $font-size-XL;
       font-weight: 400;
       font-family: $font-family-accent;
     }
@@ -35,24 +35,24 @@
     }
 
     .experience-items {
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
       @include media ("<=md"){
         margin-bottom: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: solid 1px $color-light-grey;
+        padding-block: 1rem;
+        border-bottom: solid 0.5px #37373759;
       }
 
       .experience-title {
-        font-size: $font-Medium;
+        font-size: $font-size-M;
         font-weight: 500;
       }
 
       .experience-time {
-        font-size: $font-body-text;
+        font-size: $font-size-S;
         margin-left: 1.5rem;
       }
       .experience-desc {
-        font-size: $font-body-text;
+        font-size: $font-size-S;
         line-height: 1.5;
         width: fit-content;
         color: $color-light-grey;
@@ -71,7 +71,7 @@
 
   .education-column:nth-child(1) {
     color: white;
-    font-size: $font-XL;
+    font-size: $font-size-XL;
     width: 30%;
     font-weight: 400;
     font-family: $font-family-accent;
@@ -92,24 +92,24 @@
     }
 
     .education-items {
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
       @include media ("<=md"){
         margin-bottom: 1rem;
         padding-bottom: 1rem;
-        border-bottom: solid 1px $color-light-grey;
+        border-bottom: solid 0.5px #37373759;
       }
 
       .education-title {
-        font-size: $font-Medium;
+        font-size: $font-size-M;
         font-weight: 500;
       }
 
       .education-time {
-        font-size: $font-body-text;
+        font-size: $font-size-S;
         margin-left: 1.5rem;
       }
       .education-desc {
-        font-size: $font-body-text;
+        font-size: $font-size-S;
         line-height: 1.5;
         width: fit-content;
         color: $color-light-grey;

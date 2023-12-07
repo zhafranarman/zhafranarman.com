@@ -74,7 +74,7 @@ const Hero = () => {
           <div ref={HeroCTA} className="hero-cta">
           <span className="cta-text">Explore My <br/>Playground</span>
           <svg width="32" height="100" viewBox="0 0 32 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.9224 1.42426C38.4224 49.9243 11.9986 95.9243 11.4224 98.4243M11.4224 98.4243C10.8461 100.924 4.20452 86.3299 0.922363 81.4243M11.4224 98.4243C10.8461 100.924 30.4224 89.4243 30.4224 89.4243" stroke="white" strokeWidth="1.75" strokeLinecap="round" />
+            <path d="M17.9224 1.42426C38.4224 49.9243 11.9986 95.9243 11.4224 98.4243M11.4224 98.4243C10.8461 100.924 4.20452 86.3299 0.922363 81.4243M11.4224 98.4243C10.8461 100.924 30.4224 89.4243 30.4224 89.4243" stroke="#bfbfbf" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
         </div>
         </div>

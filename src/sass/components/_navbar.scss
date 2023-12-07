@@ -16,7 +16,7 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     background-color: #0a0c0d80;
-    border: solid 0.25px rgba(51, 51, 51, 0.25);
+    border: solid 0.5px #37373759;
 
     .logo-wrapper {
       height: 20px;
@@ -24,6 +24,11 @@
       .logo {
         height: inherit;
         fill: $color-white;
+        transition: all 0.5s $animation-ease;
+
+        &:hover {
+          transform: scale(0.98);
+        }
 
         @include media("<=sm") {
           height: 1.15rem;
@@ -89,38 +94,18 @@
       gap: 0.75rem;
       align-items: center;
 
-      .availibility {
-        height: 0.75rem;
-        width: 0.75rem;
-        border-radius: 50%;
-        background-color: hsl(134, 61%, 55%);
-
-        animation: availability 0.75s infinite $animation-ease;
-      }
-
-      @keyframes availability {
-        0% {
-          opacity: 0.3;
-        }
-        50% {
-          opacity: 0.8;
-        }
-        to {
-          opacity: 0.3;
-        }
-      }
       .nav-links {
         font-size: 1.125rem;
         color: $color-white;
         font-family: $font-family-text;
         background-image: url(/src/assets/underline.svg);
-        background-position: bottom -1px left;
+        background-position: bottom 0em left;
         background-repeat: no-repeat;
-        background-size: 0% 0.2em;
+        background-size: 0% 0.5em;
         transition: all 0.2s $animation-ease;
 
         &:hover {
-          background-size: 100% 0.2em;
+          background-size: 100% 0.3em;
         }
 
         @include media("<=sm") {
@@ -154,7 +139,7 @@
       background-color: #0a0c0d80;
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border: solid 0.25px rgba(51, 51, 51, 0.25);
+      border: solid 0.5px #37373759;
     }
   }
 

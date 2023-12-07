@@ -1,57 +1,91 @@
 .about-header {
   padding-top: 20svh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   padding-bottom: 0;
 
-  .about-header-column:nth-child(1) {
-    font-family: $font-family-accent;
-    font-size: $font-XXL;
-    color: $color-white;
-    align-self: center;
-    margin-bottom: 3rem;
+  @include media("<=md") {
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  .about-header-column:nth-child(2) {
-    display: flex;
-    justify-content: space-around;
+  .about-header-column:nth-child(1) {
+    width: 30%;
 
-    @include media ("<=md"){
-      flex-direction: column;
+    @include media("<=md") {
+      width: 100%;
+      display: grid;
+      place-items: center;
     }
 
     .about-header-image {
-      width: 350px;
-      height: max-content;
-      border-radius: 1.5rem;
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
 
-      @include media ("<=md"){
+      @include media("<=md") {
         width: 250px;
         align-self: center;
       }
     }
 
-    .about-header-content {
-      width: 50%;
-      @include media ("<=md"){
-        width: 100%;
-      }
+    .cta-resume {
+      margin-top: 2rem;
+      font-size: $font-size-M;
+      font-family: $font-family-hand;
+      color: $color-white;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-image: url(/src/assets/underline.svg);
+      background-position: bottom 0em left;
+      background-repeat: no-repeat;
+      background-size: 0% 0.5em;
+      transition: all 0.3s $animation-ease;
 
-      .about-header-title {
-        color: $color-white;
-        font-size: $font-XL;
-        line-height: 1.1;
-        font-family: $font-family-accent;
-        font-weight: 400;
-
-        @include media ("<=md"){
-          text-align: center;
+      &:hover {
+        background-size: 100% 0.3em;
+        .cta-resume-icon {
+          transform: translate(30%, -20%);
         }
       }
-      .about-header-text {
-        font-size: $font-body-text;
-        color: $color-light-grey;
+
+      .cta-resume-icon {
+        height: calc(0.65 * $font-size-M);
+        transition: all 0.3s $animation-ease;
+        width: auto;
+        position: relative;
       }
+    }
+  }
+
+  .about-header-column:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+
+    @include media("<=md") {
+      width: 100%;
+    }
+
+    .about-header-title {
+      color: $color-white;
+      margin: 0;
+      font-size: $font-size-XL;
+      line-height: 1;
+      font-family: $font-family-accent;
+      font-weight: 400;
+
+      @include media("<=md") {
+        text-align: center;
+      }
+    }
+    .about-header-text {
+      font-size: $font-size-S;
+      color: $color-light-grey;
+      line-height: 1.5;
+      margin-block: 0;
     }
   }
 }
