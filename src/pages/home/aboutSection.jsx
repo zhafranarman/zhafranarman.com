@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion"
 import { Link } from "react-router-dom"
 import about_img from "../../assets/images/Optimized/about1.webp"
 import about_img2 from "../../assets/images/Optimized/about2.webp"
+import resume from "../../assets/document/resume-zhafran.pdf"
 
 const AboutSection = () => {
 
@@ -28,6 +29,15 @@ const AboutSection = () => {
       transition: { duration: 1 },
     }
   }
+  const ctaResAni = {
+    hidden: {
+      opacity: 0
+    },
+    visible: {
+      opacity: 1,
+      transition: { duration: 1 },
+    }
+  }
   const ctaAni = {
     hidden: {
       y: "20%",
@@ -44,13 +54,28 @@ const AboutSection = () => {
 
   return (
     <section className="about-section container">
+      <motion.a href={resume}
+        download="resume-zhafran"
+        target="_blank"
+        rel="noreferrer" className="about-resume-cta"
+        variants={ctaResAni} initial="hidden" animate={isInView ? "visible" : "hidden"}>
+        <motion.svg width="100%" height="100%" viewBox="0 0 113 82" fill="none" xmlns="http://www.w3.org/2000/svg"
+          whileHover={{
+            scale: 1.05,
+            transition: { duration: 0.3 },
+          }}
+        >
+          <path d="M40.9169 7.66516C11.9201 17.7722 -3.69854 37.2659 2.25457 57.6681C8.20768 78.0704 46.5782 82.6205 64.7965 80.5419C88.1076 77.8823 114.35 59.7307 111.832 36.1069C109.313 12.4831 92.6562 -7.22934 30.1142 4.47351" stroke="white" strokeWidth="1.25" strokeLinecap="round" />
+        </motion.svg>
+        <div>
+          <div>Download Résumé</div>
+        </div>
+      </motion.a>
       <div data-scroll data-scroll-section className="about-content inner-section" ref={content}>
         <div className="about-column">
           <motion.h2 variants={titleAni} initial="hidden" animate={isInView ? "visible" : "hidden"} className="about-title">
             <span className="about-title-row">Here’s the</span>
-            <span className="about-title-row">
-              <span className="color-accent">tl;dr </span>on me
-            </span>
+            <span className="about-title-row">tl;dr on me</span>
           </motion.h2>
           <div className="about-text">
             {
