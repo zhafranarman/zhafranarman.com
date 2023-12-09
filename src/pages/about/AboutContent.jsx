@@ -25,7 +25,7 @@ const AboutContent = () => {
             <div className="experience-items">
               <span className="experience-title">Katajihiji, Indococotama</span>
               <span className="experience-time">( 2021 - 2023)</span>
-              <p className="experience-desc">At katajihiji.id and indococotama, both under the same ownership, my responsibilies were, to create of an engaging landing page. Additionally, I managed the setup of their corporate email and server configuration, blending design finesse with technical optimization."</p>
+              <p className="experience-desc">At katajihiji.id and indococotama, both under the same ownership, my responsibilities were, to create of an engaging landing page. Additionally, I managed the setup of their corporate email and server configuration, blending design finesse with technical optimization.</p>
             </div>
             <div className="experience-items">
               <span className="experience-title">Akselerasi Entertaintment </span>
