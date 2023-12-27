@@ -18,7 +18,8 @@ const ProjectHeader = () => {
 
   return (
     <section className="project-header container">
-      <div className="project-header-content inner-section"><img src={project.image} alt={project.title} />
+      <div className="project-header-content inner-section">
+      <img src={project.project_detail.heder_image} alt={project.title} />
         <div className="project-title-section">
           <h1 className="project-title">{project.title}</h1>
           <h2 className="project-subtitle">{project.subtitle}</h2>
