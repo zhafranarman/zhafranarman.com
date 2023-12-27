@@ -1,0 +1,32 @@
+.project-header{
+
+  color: $color-white;
+  .project-header-content{
+    display: flex;
+    gap: 2rem;
+
+    .project-title-section{
+      width: 40%;
+
+      .project-title{
+        font-family: $font-family-accent;
+        font-weight: 400;
+        font-size: $font-size-XL;
+        margin-block: 0;
+      }
+
+      .project-subtitle{
+        font-weight: 400;
+        font-size: $font-size-S;
+      }
+    }
+
+    .project-brief{
+      flex: 1;
+
+      .project-desc{
+        font-size: $font-size-M;
+      }
+    }
+  }
+}

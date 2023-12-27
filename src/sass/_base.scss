@@ -1,56 +1,52 @@
 @import "./breakpoints";
 @import "./variables";
 
-.container{
-
+.container {
   margin-inline: auto;
 
   // Start of Breakpoint Phone
-  @include media (">=xs", "<=sm"){
+  @include media(">=xs", "<=sm") {
     margin-inline: 1rem;
   }
 
-  @include media (">sm", "<md"){
+  @include media(">sm", "<md") {
     margin-inline: 1rem;
   }
   // End of Breakpoint Phone
 
   // Start of Breakpoint Tablet
-  @include media (">=md", "<lg", "retina2x"){
+  @include media(">=md", "<lg", "retina2x") {
     margin-inline: 1.5rem;
   }
   // End of Breakpoint Tablet
 
   // Start of Breakpoint Desktop
-  @include media (">=lg", "<xl"){
+  @include media(">=lg", "<xl") {
     margin-inline: 2.5rem;
   }
 
-  @include media (">=xl", "<2xl"){
+  @include media(">=xl", "<2xl") {
     margin-inline: 4rem;
   }
 
-  @include media (">=2xl"){
+  @include media(">=2xl") {
     max-width: 1800px;
     padding-inline: 4rem;
   }
   // End of Breakpoint Desktop
-  
 }
 
-.inner-section{
+.inner-section {
   max-width: 1312px;
   margin-inline: auto;
   padding-block: 8rem;
 
-  @include media ("<sm", "<=lg"){
+  @include media("<sm", "<=lg") {
     padding-block: 2rem;
-
   }
 }
 
 .grain {
-
   animation: grain 10s steps(20) infinite;
   background-image: url(/src/assets/misc/grain.webp);
   background-repeat: repeat;
@@ -66,61 +62,56 @@
 
   @keyframes grain {
     0% {
-        transform: translate(20%,-15%)
+      transform: translate(20%, -15%);
     }
 
     10% {
-        transform: translate(-20%,-15%)
+      transform: translate(-20%, -15%);
     }
 
     20% {
-        transform: translate(20%,-5%)
+      transform: translate(20%, -5%);
     }
 
     30% {
-        transform: translate(-20%,-5%)
+      transform: translate(-20%, -5%);
     }
 
     40% {
-        transform: translate(20%,5%)
+      transform: translate(20%, 5%);
     }
 
     50% {
-        transform: translate(-20%,5%)
+      transform: translate(-20%, 5%);
     }
 
     60% {
-        transform: translate(20%,15%)
+      transform: translate(20%, 15%);
     }
 
     70% {
-        transform: translate(-20%,15%)
+      transform: translate(-20%, 15%);
     }
 
     80% {
-        transform: translate(20%,5%)
+      transform: translate(20%, 5%);
     }
 
     90% {
-        transform: translate(-20%,5%)
+      transform: translate(-20%, 5%);
     }
 
     to {
-        transform: translate(20%,-5%)
+      transform: translate(20%, -5%);
     }
   }
 }
 
 @keyframes cta-hover {
-  0%{
+  0% {
     background-size: 0% 0.25em;
   }
-  to{
+  to {
     background-size: 100% 0.25em;
   }
-  
-}
-
-.color-accent{
-  color: $color-accent;
 }

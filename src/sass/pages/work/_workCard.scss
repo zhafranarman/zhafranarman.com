@@ -1,0 +1,173 @@
+.work-card {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: block;
+
+  .work-card-thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: inherit;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.75s $animation-ease;
+  }
+
+  .work-card-overlay {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.75s $animation-ease;
+
+    .work-card-cover,
+    .work-card-info {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      box-sizing: border-box;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .work-cta {
+        color: $color-white;
+        font-size: $font-size-M;
+        font-family: $font-family-hand;
+        display: flex;
+        gap: 0.5rem;
+        width: max-content;
+        align-items: center;
+        background-image: url(/src/assets/underline.svg);
+        background-position: bottom 0em left;
+        background-repeat: no-repeat;
+        background-size: 100% 0.2em;
+        transition: all 0.3s $animation-ease;
+
+        .cta-icon-wrapper {
+          .work-cta-icon {
+            height: calc(0.65 * $font-size-M);
+            width: auto;
+            transition: all 0.3s $animation-ease;
+          }
+        }
+
+        &:hover {
+          animation: cta-hover 0.5s $animation-ease;
+          .cta-icon-wrapper {
+            .work-cta-icon {
+              transform: translate(30%, -20%);
+            }
+          }
+        }
+      }
+
+      @include media("<=md") {
+        padding: 1.5rem;
+      }
+    }
+  }
+
+  .work-card-cover {
+    background: linear-gradient(
+      0deg,
+      rgba(10, 12, 13, 0.8) 20%,
+      transparent 100%
+    );
+    display: flex;
+    flex-direction: column;
+
+    @include media("<=md") {
+      background: linear-gradient(
+        0deg,
+        rgba(10, 12, 13, 0.8) 50%,
+        transparent 100%
+      );
+    }
+
+    .work-card-title {
+      font-size: $font-size-L;
+      font-family: $font-family-accent;
+      font-weight: 400;
+      line-height: 1;
+      margin: 0;
+      color: $color-white;
+      margin-top: auto;
+    }
+
+    .work-card-subtitle {
+      font-size: 15px;
+      font-weight: 400;
+      color: $color-white;
+    }
+
+    .work-card-categories {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+
+      .categories {
+        font-size: $font-size-XXS;
+        color: $color-white;
+        line-height: 1.5;
+        padding-inline: 0.9em;
+        background-color: #e8ecf033;
+        border-radius: 1em;
+      }
+    }
+  }
+  .work-card-info {
+    background: linear-gradient(
+      180deg,
+      rgba(10, 12, 13, 0.8) 100%,
+      transparent 100%
+    );
+    transition: all 0.75s $animation-ease;
+
+    .work-card-desc {
+      font-size: $font-size-S;
+      text-wrap: balance;
+      color: $color-light-grey;
+
+      @include media("<=md") {
+        font-size: $font-size-XS;
+      }
+    }
+  }
+  &:hover {
+    .work-card-thumbnail {
+      transform: scale(120%);
+      transition-delay: 0.5s;
+    }
+    .work-card-overlay {
+      transition-delay: 0.5s;
+      top: -100%;
+    }
+    .work-card-info {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      transition-delay: 0.5s;
+    }
+  }
+
+  @include media("<=md") {
+    width: 85%;
+    height: 330px;
+  }
+
+  &:nth-child(1n) {
+    align-self: flex-start;
+  }
+  &:nth-child(2n) {
+    align-self: flex-end;
+  }
+  &:nth-child(3n) {
+    align-self: center;
+  }
+}

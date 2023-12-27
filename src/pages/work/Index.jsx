@@ -1,6 +1,6 @@
 import {Helmet} from "react-helmet-async"
 
-import WorkContent from "./WorkContent";
+import WorkList from "./WorkList";
 import Transition from "../../components/Transition";
 
 
@@ -12,7 +12,7 @@ const Work = () => {
       <link rel="canonical" href="https://zhafranarman.com/work" />
     </Helmet>
       <Transition>
-        <WorkContent />
+        <WorkList/>
       </Transition>
     </>
   );

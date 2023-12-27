@@ -1,18 +1,36 @@
 import { useParams } from "react-router-dom";
-import project_header from "../../assets/images/project/project-header-ta.webp"
+import { work } from "../work/data";
 
 const ProjectHeader = () => {
 
-  const {id} = useParams ();
+  const { id } = useParams();
+  const project = work.find((project) => project.id === id);
 
-  return (  
+  if (!project) {
+    return (
+      <div className="container">
+        <h1>
+          Project not found
+        </h1>
+      </div>
+    )
+  }
+
+  return (
     <section className="project-header container">
-      <div className="project-header-content inner-section">
-        <img src={project_header} />
-        <h1 className="project-name">{id}</h1>
+      <div className="project-header-content inner-section"><img src={project.image} alt={project.title} />
+        <div className="project-title-section">
+          <h1 className="project-title">{project.title}</h1>
+          <h2 className="project-subtitle">{project.subtitle}</h2>
+        </div>
+        <div className="project-brief">
+          <p className="project-desc">
+            {project.description}
+          </p>
+        </div>
       </div>
     </section>
   );
 }
- 
+
 export default ProjectHeader;

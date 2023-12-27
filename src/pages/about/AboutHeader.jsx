@@ -1,4 +1,4 @@
-import about_photos from "../../assets/images/Optimized/about-header.webp"
+import about_photos from "../../assets/images/about3.webp"
 import resume from "../../assets/document/resume-zhafran.pdf"
 
 const AboutHeader = () => {

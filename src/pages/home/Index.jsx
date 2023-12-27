@@ -3,7 +3,7 @@ import {Helmet} from "react-helmet-async"
 import Transition from "../../components/Transition";
 import AboutSection from "./aboutSection";
 import Hero from "./heroSection";
-import WorkSection from "./workSection";
+import WorkList from "../work/WorkList";
 
 const Home = () => {
 
@@ -16,7 +16,7 @@ const Home = () => {
     <Transition>
       <Hero />
       <AboutSection />
-      <WorkSection />
+      <WorkList />
     </Transition>
     </>
   );

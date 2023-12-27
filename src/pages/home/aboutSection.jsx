@@ -1,8 +1,8 @@
 import React, { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Link } from "react-router-dom"
-import about_img from "../../assets/images/Optimized/about1.webp"
-import about_img2 from "../../assets/images/Optimized/about2.webp"
+import about_img from "../../assets/images/about1.webp"
+import about_img2 from "../../assets/images/about2.webp"
 import resume from "../../assets/document/resume-zhafran.pdf"
 
 const AboutSection = () => {
