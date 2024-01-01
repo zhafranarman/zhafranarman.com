@@ -2,7 +2,9 @@ import { Link } from "react-router-dom"
 import { work } from "./data";
 
 
+
 const WorkCard = ({ project }) => {
+
   return (
     <article className="work-card" key={project.id}>
       <img className="work-card-thumbnail" src={project.thumbnail} alt={project.title} />
@@ -19,7 +21,10 @@ const WorkCard = ({ project }) => {
           </ul>
         </div>
         <div className="work-card-info">
-          <p className="work-card-desc">{project.description}</p>
+          <div>
+            <span>TL;DR</span>
+            <p className="work-card-desc">{project.description}</p>
+          </div>
           <Link className="work-cta" to={`work/${project.id}`}>
             <span>Read More</span>
             <span className="cta-icon-wrapper">

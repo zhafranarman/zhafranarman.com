@@ -130,6 +130,18 @@
     );
     transition: all 0.75s $animation-ease;
 
+    div{
+      span{
+        color: $color-white;
+        font-size: calc(1.5 * $font-size-M );
+        font-weight: 500;
+        
+        @include media ("<=md"){
+          font-size: calc(1.125 * $font-size-M );
+        }
+      }
+    }
+
     .work-card-desc {
       font-size: $font-size-S;
       text-wrap: balance;

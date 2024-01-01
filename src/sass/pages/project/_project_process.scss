@@ -1,0 +1,81 @@
+.project-process-section {
+  padding-top: 0;
+  color: $color-white;
+
+  .project-process-gallery {
+    width: 100%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 3rem;
+
+    @include media ("<=md"){
+      gap: 2rem;
+    }
+
+    .gallery-process-wrapper {
+      margin: 0;
+      height: max-content;
+
+      &:nth-child(1),
+      &:nth-child(4) {
+        grid-column: span 2 / span 2;
+
+        @include media("<=md") {
+          grid-column: span 6 / span 6;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        grid-column: span 4 / span 4;
+        @include media("<=md") {
+          grid-column: span 6 / span 6;
+        }
+      }
+      .gallery-process-picture {
+        width: 100%;
+        height: 515px;
+        border-radius: 1rem;
+
+        @include media ("<=md"){
+          height: auto;
+        }
+      }
+    }
+    figcaption {
+      text-align: center;
+      font-size: calc($font-size-S - 0.15rem);
+      margin-block: calc($font-size-S - 0.5rem);
+    }
+  }
+
+  .project-process-text {
+    margin-top: 4rem;
+    margin-inline: auto;
+    width: 70%;
+
+    @include media("<=md"){
+      width: 100%;
+      margin-top: 2rem;
+    }
+    span {
+      font-size: $font-size-S;
+      margin-block: $font-size-S;
+      font-weight: 350;
+    }
+    h3 {
+      font-size: calc($font-size-L - 1rem);
+      font-weight: 500;
+      margin-block: $font-size-M;
+    }
+    p {
+      font-size: $font-size-M;
+      color: $color-light-grey;
+
+      @include media ("<=md"){
+        font-size: $font-size-S;
+      }
+    }
+  }
+}

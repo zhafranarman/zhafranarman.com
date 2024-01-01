@@ -1,31 +1,88 @@
-.project-header{
+.project-header {
+  box-sizing: border-box;
 
-  color: $color-white;
-  .project-header-content{
+  .project-header-content {
+    color: $color-white;
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 8rem;
+    box-sizing: border-box;
 
-    .project-title-section{
-      width: 40%;
+    @include media ("<=md"){
+      padding-top: 6rem;
+    }
 
-      .project-title{
-        font-family: $font-family-accent;
-        font-weight: 400;
-        font-size: $font-size-XL;
-        margin-block: 0;
-      }
+    .project-thumbnail-wrapper {
+      width: 100%;
+      display: grid;
+      place-items: center;
 
-      .project-subtitle{
-        font-weight: 400;
-        font-size: $font-size-S;
+      .project-thumbnail {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
       }
     }
 
-    .project-brief{
-      flex: 1;
+    .project-brief {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-top: 4rem;
 
-      .project-desc{
-        font-size: $font-size-M;
+      @include media ("<=md"){
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        margin-top: 2.5rem;
+        gap: 2rem;
+      }
+
+      .project-title {
+        font-family: $font-family-accent;
+        font-size: $font-size-XL;
+        line-height: 1;
+        font-weight: 400;
+        margin-block: 0;
+      }
+
+      .project-subtitle {
+        font-weight: 400;
+        font-size: $font-size-S;
+        margin-block: $font-size-S;
+      }
+
+      .project-tags {
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+
+        .tags {
+          font-size: $font-size-XS;
+          color: $color-white;
+          line-height: 1.5;
+          padding-inline: 0.9em;
+          background-color: #e8ecf033;
+          border-radius: 1em;
+        }
+      }
+
+      .project-tldr {
+        margin-top: auto;
+        span {
+          font-size: calc($font-size-L - 1.25rem);
+          font-weight: 600;
+        }
+        .project-desc {
+          font-size: $font-size-M;
+          color: $color-light-grey;
+          margin-block: $font-size-S;
+          text-align: left;
+
+          @include media ("<=md"){
+            font-size: $font-size-S;
+          }
+        }
       }
     }
   }

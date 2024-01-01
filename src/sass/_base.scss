@@ -3,6 +3,7 @@
 
 .container {
   margin-inline: auto;
+  box-sizing: border-box;
 
   // Start of Breakpoint Phone
   @include media(">=xs", "<=sm") {
@@ -37,12 +38,13 @@
 }
 
 .inner-section {
-  max-width: 1312px;
+  padding-block: 5rem;
   margin-inline: auto;
-  padding-block: 8rem;
+  max-width: 1312px;
 
   @include media("<sm", "<=lg") {
     padding-block: 2rem;
+    padding-inline: 0;
   }
 }
 

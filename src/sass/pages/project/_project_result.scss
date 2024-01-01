@@ -1,0 +1,67 @@
+.project-result-section{
+  padding-top: 0;
+  color: $color-white;
+
+  .project-result-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 4rem;
+
+    @include media ("<=md"){
+      gap: 2rem;
+    }
+
+
+    .grid-result-wrapper {
+      margin: 0;
+
+      &:nth-child(1),
+      &:nth-child(4) {
+        grid-column: span 2 / span 2;
+        @include media("<=md") {
+          grid-column: span 6 / span 6;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        grid-column: span 4 / span 4;
+        @include media("<=md") {
+          grid-column: span 6 / span 6;
+        }
+      }
+      .gallery-result-picture {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  .project-result-text{
+    width: 90%;
+    margin-inline: auto;
+
+    @include media ("<=md"){
+      width: 100%;
+    }
+    span{
+      font-size: $font-size-S;
+      margin-block: $font-size-S;
+      font-weight: 350;
+    }
+    h3{
+      font-size: calc($font-size-L - 1rem);
+      font-weight: 500;
+      margin-block: $font-size-M ;
+    }
+    p{
+      font-size: $font-size-M;
+      color: $color-light-grey;
+
+      @include media ("<=md"){
+        font-size: $font-size-S;
+      }
+    }
+  }
+}

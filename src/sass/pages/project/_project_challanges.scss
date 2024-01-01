@@ -1,0 +1,52 @@
+.challenges-section {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+
+  .challenges-section-picture-wrapper {
+    width: 100%;
+    margin: 0;
+
+    .challenges-section-picture {
+      width: 100%;
+      border-radius: 1rem;
+      height: auto;
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: calc($font-size-S - 0.15rem);
+      margin-block: calc($font-size-S - 0.5rem);
+    }
+  }
+
+  .challenges-section-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 4rem;
+
+    @include media("<=md") {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      margin-top: 2.5rem;
+      gap: 2rem;
+    }
+    span {
+      font-size: calc($font-size-L - 1.25rem);
+      font-weight: 600;
+    }
+    p {
+      font-size: $font-size-M;
+      color: $color-light-grey;
+      margin-block: $font-size-M;
+
+      @include media ("<=md"){
+        font-size: $font-size-S;
+      }
+    }
+  }
+}

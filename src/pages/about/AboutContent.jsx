@@ -45,7 +45,7 @@ const AboutContent = () => {
           <div className="education-items">
             <span className="education-title">Institut Teknologi Nasional</span>
             <span className="education-time">(Bachelor of Information System)</span>
-            <p className="education-desc">During my college years, my academic focus was on Information Systems. This dynamic field taught me the art of blending business with technology, emphasizing the creation of enterprise architecture and the design of holistic systems. Beyond textbooks, I gained hands-on experience in applying these concepts to craft innovative solutions at the intersection of business and technology.</p>
+            <p className="education-desc">I graduated with a Bachelor's in Information Systems and have since excelled as a frontend developer, system analyst, and UI/UX designer.</p>
           </div>
         </div>
       </article>

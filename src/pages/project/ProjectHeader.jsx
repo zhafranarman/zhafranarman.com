@@ -1,33 +1,29 @@
-import { useParams } from "react-router-dom";
-import { work } from "../work/data";
-
-const ProjectHeader = () => {
-
-  const { id } = useParams();
-  const project = work.find((project) => project.id === id);
-
-  if (!project) {
-    return (
-      <div className="container">
-        <h1>
-          Project not found
-        </h1>
-      </div>
-    )
-  }
+const ProjectHeader = ({ project }) => {
 
   return (
-    <section className="project-header container">
+    <section className="container project-header">
       <div className="project-header-content inner-section">
-      <img src={project.project_detail.heder_image} alt={project.title} />
-        <div className="project-title-section">
-          <h1 className="project-title">{project.title}</h1>
-          <h2 className="project-subtitle">{project.subtitle}</h2>
+        <div className="project-thumbnail-wrapper">
+          <img className="project-thumbnail" src={project.project_detail.project_header} alt={project.title} />
         </div>
         <div className="project-brief">
-          <p className="project-desc">
-            {project.description}
-          </p>
+          <div>
+            <h1 className="project-title">{project.title}</h1>
+            <h2 className="project-subtitle">{project.subtitle}</h2>
+            <div className="project-tags">
+              {project.tags.map((tag, index) => (
+                <span key={index} className="tags">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="project-tldr">
+            <span>TL;DR</span>
+            <p className="project-desc">
+              {project.description}
+            </p>
+          </div>
         </div>
       </div>
     </section>

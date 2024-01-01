@@ -1,0 +1,42 @@
+.not-found-section{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 8rem;
+
+  @include media ("<=md"){
+    flex-direction: column;
+    padding-top: 6rem;
+  }
+
+  .not-found-illu{
+    height: auto;
+    width: 350px;
+    flex: 1;
+
+    @include media ("<=md"){
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .not-found-text{
+    color: $color-white;
+    width: 40%;
+    @include media ("<=md"){
+      width: 100%;
+      text-align: center;
+    }
+
+    h1{
+      font-family: $font-family-hand;
+      font-size: calc($font-size-L - 0.5rem);
+      font-weight: 400;
+    }
+    p{
+      font-size: $font-size-M;
+    }
+  }
+}
