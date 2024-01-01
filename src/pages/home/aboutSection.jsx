@@ -1,8 +1,6 @@
 import React, { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Link } from "react-router-dom"
-import about_img from "../../assets/images/about1.webp"
-import about_img2 from "../../assets/images/about2.webp"
 import resume from "../../assets/document/resume-zhafran.pdf"
 
 const AboutSection = () => {
@@ -92,13 +90,13 @@ const AboutSection = () => {
         </div>
         <div className="about-column">
           <figure data-scroll data-scroll-speed="0.08" className="about-image-frame is-inview">
-            <img className="about-image" src={about_img} alt="Photo of Muhammad Zhafran Arman and friends working on a project" height="325" width="325" loading="lazy" title="About Photo" />
+            <img className="about-image" src="https://res.cloudinary.com/djvq4m3mz/image/upload/v1704106548/about1.webp" alt="Photo of Muhammad Zhafran Arman and friends working on a project" height="325" width="325" loading="lazy" title="About Photo" />
             <figcaption className="about-image-caption">
               Me and my friends, working on self initiated project.
             </figcaption>
           </figure>
           <figure data-scroll data-scroll-speed="0.09" className="about-image-frame is-inview">
-            <img className="about-image" src={about_img2} alt="Photo of Muhammad Zhafran Arman and working on a chill place" height="325" width="325" loading="lazy" title="About Photo" />
+            <img className="about-image" src="https://res.cloudinary.com/djvq4m3mz/image/upload/v1704106548/about2.webp" alt="Photo of Muhammad Zhafran Arman and working on a chill place" height="325" width="325" loading="lazy" title="About Photo" />
             <figcaption className="about-image-caption">
               Sometimes, I dig <br /> working in a chill place.
             </figcaption>

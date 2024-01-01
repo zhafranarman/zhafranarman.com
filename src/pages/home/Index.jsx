@@ -1,4 +1,4 @@
-import {Helmet} from "react-helmet-async"
+import { Helmet } from "react-helmet-async"
 
 import Transition from "../../components/Transition";
 import AboutSection from "./aboutSection";
@@ -10,14 +10,14 @@ const Home = () => {
 
   return (
     <>
-    <Helmet>
-      <title>Zhafran Arman, I make digital things on the internet.</title>
-    </Helmet>
-    <Transition>
-      <Hero />
-      <AboutSection />
-      <WorkList />
-    </Transition>
+      <Helmet>
+        <title>Zhafran Arman, I make digital things on the internet.</title>
+      </Helmet>
+      <Transition>
+        <Hero />
+        <AboutSection />
+        <WorkList />
+      </Transition>
     </>
   );
 }

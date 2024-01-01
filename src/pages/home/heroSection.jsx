@@ -2,15 +2,14 @@ import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useRef, useLayoutEffect, } from "react";
 
-import hero_image from "../../assets/images/hero.webp";
-
-
 const Hero = () => {
 
   const FirstName = useRef();
   const LastName = useRef();
   const HeroImage = useRef();
   const HeroCTA = useRef();
+
+  
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -66,7 +65,7 @@ const Hero = () => {
         <span ref={LastName} className="name">Arman</span>
         <div className="hero-image-wrapper">
           <figure ref={HeroImage} className="hero-image-frame">
-            <img className="hero-image" src={hero_image} alt="Photo of Muhammad Zhafran Arman" height="465" width="350" loading="eager" />
+            <img className="hero-image" src="https://res.cloudinary.com/djvq4m3mz/image/upload/v1704094430/hero_zhafranarman.com.webp" alt="Photo of Muhammad Zhafran Arman" height="465" width="350" loading="eager" />
             <figcaption>
               <h1 className="hero-text">I'm a UI/UX designer & frontend developer. I make things on the internet.</h1>
             </figcaption>

@@ -1,4 +1,3 @@
-import about_photos from "../../assets/images/about3.webp"
 import resume from "../../assets/document/resume-zhafran.pdf"
 
 const AboutHeader = () => {
@@ -6,7 +5,7 @@ const AboutHeader = () => {
     <section className="container">
       <div className="inner-section about-header">
         <div className="about-header-column">
-          <img className="about-header-image" src={about_photos} alt="Photo of Muhammad Zhafran Arman and friends working on a project" height="350" width="350" loading="eager" title="About Photo Header" />
+          <img className="about-header-image" src="https://res.cloudinary.com/djvq4m3mz/image/upload/v1704106975/about3.webp" alt="Photo of Muhammad Zhafran Arman and friends working on a project" height="350" width="350" loading="eager" title="About Photo Header" />
           <a href={resume}
         download="resume-zhafran"
         target="_blank"
