@@ -1,19 +1,19 @@
-import thumbnailGCBME from "../../assets/images/project/gcbme/thumbnail.webp";
-
 export const work = [
   {
     id: "gcbme",
     title: "GCBME",
-    thumbnail: thumbnailGCBME,
+    thumbnail:
+      "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704117670/thumbnail_gcbme.webp",
     subtitle: "Global Conference on Business, Management and Entrepreneurship",
     tags: ["Web Development", "UI/UX Design"],
     description:
       "GCBME or UPI global conference on business, management and entrepreneurship is an annual conference hosted by Universitas Pendidikan Indonesia. I given the chance to enhance the GCBME conference website hosted by Universitas Pendidikan Indonesia, main focus of this project was on redesigning the landing page to be engaging, user-friendly, and informative.",
     project_detail: {
-      project_header: "../src/assets/images/project/gcbme/header.webp",
+      project_header:
+        "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704117384/header_gcbme.webp",
       challenges: {
         challenges_picture:
-          "../src/assets/images/project/gcbme/challanges.webp",
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704118663/challanges_gcbme.webp",
         challenges_picture_caption: "Before and After Revamped",
         challenges_text:
           "SafePal is a pioneer in the crypto storage game. But despite their groundbreaking products, their packaging and digital image lacked the vibrancy and appeal necessary to stand out in the competitive market. The absence of a distinctive brand identity and assets undermined their ability to connect with their audience effectively.",
@@ -21,13 +21,17 @@ export const work = [
           "Entering web3 can be intimidating for newcomers. SafePal’s mission to make crypto more friendly and empowering caught our eye. We used that vision to revamp their brand identity, giving their online presence and packaging the same welcoming and inspiring energy that defines their top-notch crypto storage solutions.",
       },
       process: {
-        process_picture1: "../src/assets/images/project/gcbme/process1.webp",
-        process_picture1_caption: "Defining Requirements",
-        process_picture2: "../src/assets/images/project/gcbme/process2.webp",
+        process_picture1:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704119148/process1_gcbme.webp",
+        process_picture1_caption: "Defining Requirements & Project Planning",
+        process_picture2:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704119523/process2_gcbme.webp",
         process_picture2_caption: "Wireframing",
-        process_picture3: "../src/assets/images/project/gcbme/process3.webp",
+        process_picture3:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704120369/process3_gcbme.webp",
         process_picture3_caption: "High Fidelity Wireframe",
-        process_picture4: "../src/assets/images/project/gcbme/process4.webp",
+        process_picture4:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704120370/process4_gcbme.webp",
         process_picture4_caption: "Deployment and Testing",
         process_title:
           "The project management tool you need to lighten your mental workload.",
@@ -37,12 +41,12 @@ export const work = [
           `,
       },
       result: {
-        result_picture1: "../src/assets/images/project/gcbme/process1.webp",
-        result_picture1_caption: "",
-        result_picture2: "../src/assets/images/project/gcbme/process2.webp",
-        result_picture2_caption: "",
-        result_picture3: "../src/assets/images/project/gcbme/process4.webp",
-        result_picture3_caption: "",
+        result_picture1:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704121943/result1_gcbme.webp",
+        result_picture1_caption: "Mobile View",
+        result_picture2:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704121963/result2_gcbme.webp",
+        result_picture2_caption: "Desktop View",
         result_title:
           "The project management tool you need to lighten your mental workload.",
         result_text: `The MVP version has highlighted significant needs for architects and their clients, particularly in improving the follow-up process and managing various amendments that architects may propose on their plan suggestions, for instance.\n
