@@ -42,8 +42,7 @@ const ProjectPage = () => {
       <Helmet>
         <title>Work - {project.title}</title>
       </Helmet>
-      <Transition>
-        
+      <Transition>  
         <ProjectHeader project={project} />
         <ProjectChallenges project={project} />
         <ProjectProcess project={project} />

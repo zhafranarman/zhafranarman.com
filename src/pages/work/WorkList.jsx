@@ -4,6 +4,7 @@ import { work } from "./data";
 
 
 const WorkCard = ({ project }) => {
+  
 
   return (
     <article className="work-card" key={project.id}>
