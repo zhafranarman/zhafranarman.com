@@ -16,9 +16,9 @@ export const work = [
           "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704118663/challanges_gcbme.webp",
         challenges_picture_caption: "Before and After Revamped",
         challenges_text:
-          "SafePal is a pioneer in the crypto storage game. But despite their groundbreaking products, their packaging and digital image lacked the vibrancy and appeal necessary to stand out in the competitive market. The absence of a distinctive brand identity and assets undermined their ability to connect with their audience effectively.",
+          "After reviewing feedback from the previous GCBME, it appears that users faced challenges with tasks like conference registration and finding event information. Additionally, concerns were raised about the interface lacking user-friendliness and engagement. Enhancements to these aspects are necessary for a more positive user experience at the upcoming conference.",
         solution_text:
-          "Entering web3 can be intimidating for newcomers. SafePal’s mission to make crypto more friendly and empowering caught our eye. We used that vision to revamp their brand identity, giving their online presence and packaging the same welcoming and inspiring energy that defines their top-notch crypto storage solutions.",
+          "Given these issues, the goal for the next conference is to develop a website that simplifies the conference registration process with user-friendly features, providing an informative and engaging platform. By doing so, users can easily and quickly find the desired information with engaging and user-friendly interfaces.",
       },
       process: {
         process_picture1:
@@ -34,10 +34,9 @@ export const work = [
           "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704120370/process4_gcbme.webp",
         process_picture4_caption: "Deployment and Testing",
         process_title:
-          "The project management tool you need to lighten your mental workload.",
-        process_text: `The MVP version has highlighted significant needs for architects and their clients, particularly in improving the follow-up process and managing various amendments that architects may propose on their plan suggestions, for instance.\n
-          I find it challenging to organize myself effectively with the different client feedback I receive on my shared plans. It's overwhelming! Sophie - Architect.\n
-          This quote is one of several comments we received during the exploratory research sprint.
+          "The approach for this project is waterfall, adopting a comfortable method of working with stakeholders.",
+        process_text: `We initiated the project by defining requirements and engaging in project planning to provide guidance throughout the project-building process. The subsequent step involves wireframing and designing the website, aiming for a clean and engaging modern layout that prioritizes the information presented on the website. This approach seeks to achieve an informative design while simplifying the conference process.\n
+          Following the design phase, we proceed to deployment, using WordPress as per the project owner's request for swift deployment and implementation. Additionally, we prioritize the performance of the website. During the deployment process, we optimize the web components for the best user experience.
           `,
       },
       result: {
@@ -47,11 +46,9 @@ export const work = [
         result_picture2:
           "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704121963/result2_gcbme.webp",
         result_picture2_caption: "Desktop View",
-        result_title:
-          "The project management tool you need to lighten your mental workload.",
-        result_text: `The MVP version has highlighted significant needs for architects and their clients, particularly in improving the follow-up process and managing various amendments that architects may propose on their plan suggestions, for instance.\n
-          I find it challenging to organize myself effectively with the different client feedback I receive on my shared plans. It's overwhelming! Sophie - Architect.\n
-          This quote is one of several comments we received during the exploratory research sprint.
+        result_title: "More engaging, informative and user-friendly.",
+        result_text: `After completing the project and reviewing the reports, we have successfully achieved the main goal of making the conference process more accessible to the user. The interface is now more engaging and informative.\n
+          Furthermore, we have continued our collaboration with GCBME from 2021 until the latest GCBME, which took place in 2023.
           `,
       },
     },
