@@ -97,9 +97,10 @@ export const work = [
           "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704120370/process4_gcbme.webp",
         process_picture4_caption: "Deployment and Testing",
         process_title:
-          "The approach for this project is waterfall, adopting a comfortable method of working with stakeholders.",
-        process_text: `We initiated the project by defining requirements and engaging in project planning to provide guidance throughout the project-building process. The subsequent step involves wireframing and designing the website, aiming for a clean and engaging modern layout that prioritizes the information presented on the website. This approach seeks to achieve an informative design while simplifying the conference process.\n
-          Following the design phase, we proceed to deployment, using WordPress as per the project owner's request for swift deployment and implementation. Additionally, we prioritize the performance of the website. During the deployment process, we optimize the web components for the best user experience.
+          "Because this research is utilizing the TOGAF Framework, the approach of this process follows the TOGAF ADM (Architecture Development Method).",
+        process_text: `This research was initiated by collecting data from ITENAS stakeholders, observing the functioning of the ITENAS IMS system, and studying official documents to provide a background for the TOGAF recommendation for visualizing the current architecture at ITENAS.\n
+          After collecting data, the next step involves defining the architectural context or phase (P-A) in TOGAF ADM process. This includes defining the architecture vision and establishing principles that align with the gathered data and best practices in enterprise architecture.\n
+          Following the Architecture Vision and Planning phase (P-A), I proceed to the Architecture Delivery phase (B-C-D). This involves defining the current (as-is) architecture in ITENAS and designing the future (target) architecture. Additionally, this phase encompasses conducting a gap analysis between the "as-is" and "target" architecture to identify what changes can be anticipated in the future architecture.\n
           `,
       },
       result: {
@@ -116,19 +117,6 @@ export const work = [
     },
   },
 ];
-// {
-//   id: "tugasakhir",
-//   title: "Bachelor's Research",
-//   thumbnail: "../src/assets/images/project/tugasakhir/thumbnail.webp",
-//   subtitle:
-//     "Designing Architecture Identity Management System with TOGAF ADM 10 to Achieve smart campus",
-//   tags: ["Enterprise Architecture", "TOGAF"],
-//   description:
-//     "As the influence of information technology in business strengthens, technology becomes a crucial driver of innovation and value creation. An integral element in this technological landscape is the Identity Management System (IMS). IMS is vital for managing user identities within applications or across an enterprise, playing a pivotal role in defining user rights within the business environment.",
-//   project_detail: {
-//     heder_image: "../src/assets/images/project/tugasakhir/header.webp",
-//   },
-// },
 // {
 //   id: "studee",
 //   title: "Studee",
