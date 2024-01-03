@@ -1,6 +1,9 @@
 const ProjectResult = ({ project }) => {
-
   let phrase = project.project_detail.result.result_text;
+
+  const Color = {
+    backgroundColor: project.color || 'defaultColor',
+  };
 
   return (
     <section className="container">
@@ -16,7 +19,7 @@ const ProjectResult = ({ project }) => {
           </figure>
           <div className="grid-result-wrapper">
             <div className="project-result-text">
-              <span>The Result</span>
+              <span>The Outcome</span>
               <h3>{project.project_detail.result.result_title}</h3>
               {
                 phrase.split("\n").map((paragraph, index) => {
@@ -30,6 +33,21 @@ const ProjectResult = ({ project }) => {
             <figcaption>{project.project_detail.result.result_picture3_caption}</figcaption>
           </figure>
         </div>
+        {project.project_detail && project.project_detail.testimonial && (
+          <div className="project-testimonial" style={{ backgroundColor: Color.backgroundColor }}>
+            <div className="testimonial">
+              <span>
+                Testimonial
+              </span>
+              <p>
+                &quot;{project.project_detail.testimonial.testimonial_text}&quot;
+              </p>
+              <div>
+                - {project.project_detail.testimonial.testimonial_name}, {project.project_detail.testimonial.testimonial_position}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

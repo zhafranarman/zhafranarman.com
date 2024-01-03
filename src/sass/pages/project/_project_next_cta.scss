@@ -1,0 +1,21 @@
+.next-project-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .next-project-cta {
+    color: $color-white;
+    display: grid;
+    place-items: center;
+
+    span {
+      font-family: $font-family-accent;
+      font-size: $font-size-L;
+    }
+
+    div{
+      font-size: $font-size-M;
+      width: max-content;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 export const work = [
   {
     id: "gcbme",
+    color: "#34192D",
     title: "GCBME",
     thumbnail:
       "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704117670/thumbnail_gcbme.webp",
@@ -50,6 +51,67 @@ export const work = [
         result_text: `After completing the project and reviewing the reports, we have successfully achieved the main goal of making the conference process more accessible to the user. The interface is now more engaging and informative.\n
           Furthermore, we have continued our collaboration with GCBME from 2021 until the latest GCBME, which took place in 2023.
           `,
+      },
+      testimonial: {
+        testimonial_text:
+          "Collaborating with Zhafran and his team proved to be outstanding. They adhered to the timeline impeccably, launching on the predicted day. The alignment of their creative ideas with our specific requirements for the new site was commendable. It was a highly successful collaboration - well done!",
+        testimonial_name: "Ratih Hurriyati",
+        testimonial_position: "Head of GCBME",
+      },
+    },
+  },
+  {
+    id: "tugasakhir",
+    color: "#1A1A1A",
+    title: "Bachelor's Research",
+    thumbnail:
+      "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704180025/thumbnail_tugasakhir.webp",
+    subtitle:
+      "Designing Architecture Identity Management System with TOGAF ADM 10 to Achieve smart campus",
+    tags: ["Enterprise Architecture", "TOGAF"],
+    description:
+      "The use of information technology in business is evolving, and user identity management through IMS (Identity Management System) is crucial. However, the lack of integration between IMS and organizational information systems complicates the user's ability to use the information system effectively. This case study at the Institut Teknologi Nasional (ITENAS) will analyze and propose an IMS and technological solution utilizing Enterprise Architecture with the TOGAF Framework.",
+    project_detail: {
+      project_header:
+        "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704254312/header_tugasakhir.webp",
+      challenges: {
+        challenges_picture:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704118663/challanges_gcbme.webp",
+        challenges_picture_caption: "Before and After Revamped",
+        challenges_text:
+          "The Industry 4.0 Revolution has led to the adoption of smart systems. One key component of a smart system is an IMS (Identity Management System). However, the lack of an Identity Management System (IMS) at ITENAS causes inconvenience for users who must manage multiple credentials for each application. The main problem to address is the absence of an IMS and its negative impact hindering user comfort and system efficiency.",
+        solution_text:
+          "This research initiative aims to analyze and enhance the current Identity Management System (IMS) utilizing enterprise architecture at Institut Teknologi Nasional (Itenas). Objectives include designing pertinent IMS solutions, formulating development stages using the TOGAF framework, and focusing on elevating efficiency and security within Itenas's user identity systems",
+      },
+      process: {
+        process_picture1:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704119148/process1_gcbme.webp",
+        process_picture1_caption: "Defining Requirements & Project Planning",
+        process_picture2:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704119523/process2_gcbme.webp",
+        process_picture2_caption: "Wireframing",
+        process_picture3:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704120369/process3_gcbme.webp",
+        process_picture3_caption: "High Fidelity Wireframe",
+        process_picture4:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704120370/process4_gcbme.webp",
+        process_picture4_caption: "Deployment and Testing",
+        process_title:
+          "The approach for this project is waterfall, adopting a comfortable method of working with stakeholders.",
+        process_text: `We initiated the project by defining requirements and engaging in project planning to provide guidance throughout the project-building process. The subsequent step involves wireframing and designing the website, aiming for a clean and engaging modern layout that prioritizes the information presented on the website. This approach seeks to achieve an informative design while simplifying the conference process.\n
+          Following the design phase, we proceed to deployment, using WordPress as per the project owner's request for swift deployment and implementation. Additionally, we prioritize the performance of the website. During the deployment process, we optimize the web components for the best user experience.
+          `,
+      },
+      result: {
+        result_picture1:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704121943/result1_gcbme.webp",
+        result_picture1_caption: "Mobile View",
+        result_picture2:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704121963/result2_gcbme.webp",
+        result_picture2_caption: "Desktop View",
+        result_title: "More engaging, informative and user-friendly.",
+        result_text: `After completing the project and reviewing the reports, we have successfully achieved the main goal of making the conference process more accessible to the user. The interface is now more engaging and informative.\n
+          Furthermore, we have continued our collaboration with GCBME from 2021 until the latest GCBME, which took place in 2023.`,
       },
     },
   },

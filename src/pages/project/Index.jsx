@@ -4,17 +4,23 @@ import { work } from "../work/data";
 import { useEffect } from "react";
 
 
-import ProjectNotFound from "./ProjectNotFound";
 import Transition from "../../components/Transition";
+import ProjectNotFound from "./ProjectNotFound";
 import ProjectChallenges from "./ProjectChallanges";
 import ProjectHeader from "./ProjectHeader";
 import ProjectProcess from "./ProjectProcess";
 import ProjectResult from "./ProjectResult";
+import ProjectNextCTA from "./ProjectNextCTA";
+
 
 
 const ProjectPage = () => {
   const { id } = useParams();
   const project = work.find((project) => project.id === id);
+
+  const getCurrentIndex = () => {
+    return work.findIndex((p) => p.id === id);
+  };
 
   useEffect(() => {
     // Check if the viewport width is less than or equal to 768 pixels (adjust as needed)
@@ -47,6 +53,7 @@ const ProjectPage = () => {
         <ProjectChallenges project={project} />
         <ProjectProcess project={project} />
         <ProjectResult project={project} />
+        <ProjectNextCTA currentProjectIndex={getCurrentIndex()} />
       </Transition>
     </>
   );
