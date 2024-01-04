@@ -76,8 +76,8 @@ export const work = [
         "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704254312/header_tugasakhir.webp",
       challenges: {
         challenges_picture:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704118663/challanges_gcbme.webp",
-        challenges_picture_caption: "Before and After Revamped",
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704343140/challanges_tugasakhir.webp",
+        challenges_picture_caption: "TOGAF Architecture Development Method",
         challenges_text:
           "The Industry 4.0 Revolution has led to the adoption of smart systems. One key component of a smart system is an IMS (Identity Management System). However, the lack of an Identity Management System (IMS) at ITENAS causes inconvenience for users who must manage multiple credentials for each application. The main problem to address is the absence of an IMS and its negative impact hindering user comfort and system efficiency.",
         solution_text:
@@ -85,34 +85,36 @@ export const work = [
       },
       process: {
         process_picture1:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704119148/process1_gcbme.webp",
-        process_picture1_caption: "Defining Requirements & Project Planning",
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704343890/process1_tugasakhir.webp",
+        process_picture1_caption: "Gathering Data, For Requirements",
         process_picture2:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704119523/process2_gcbme.webp",
-        process_picture2_caption: "Wireframing",
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704345043/process2_tugasakhir.webp",
+        process_picture2_caption: "Phase (P-A) Architecture Context",
         process_picture3:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704120369/process3_gcbme.webp",
-        process_picture3_caption: "High Fidelity Wireframe",
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704372104/process3_tugasakhir.webp",
+        process_picture3_caption: "Phase (B-C-D) Architecture Delivery",
         process_picture4:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704120370/process4_gcbme.webp",
-        process_picture4_caption: "Deployment and Testing",
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704373713/process4_tugasakhir.webp",
+        process_picture4_caption: "Phase (E-F) Transition Planning",
         process_title:
           "Because this research is utilizing the TOGAF Framework, the approach of this process follows the TOGAF ADM (Architecture Development Method).",
         process_text: `This research was initiated by collecting data from ITENAS stakeholders, observing the functioning of the ITENAS IMS system, and studying official documents to provide a background for the TOGAF recommendation for visualizing the current architecture at ITENAS.\n
           After collecting data, the next step involves defining the architectural context or phase (P-A) in TOGAF ADM process. This includes defining the architecture vision and establishing principles that align with the gathered data and best practices in enterprise architecture.\n
           Following the Architecture Vision and Planning phase (P-A), I proceed to the Architecture Delivery phase (B-C-D). This involves defining the current (as-is) architecture in ITENAS and designing the future (target) architecture. Additionally, this phase encompasses conducting a gap analysis between the "as-is" and "target" architecture to identify what changes can be anticipated in the future architecture.\n
+          In the final phase, I proceed to the next step, which is (E-F) transition planning. In this stage, implementation plans for initiatives generated in the preceding processes are developed and aligned with a roadmap to attain the target architecture. Additionally, this phase addresses the organization's concerns and evaluates its capabilities for implementing the proposed architecture.
           `,
       },
       result: {
         result_picture1:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704121943/result1_gcbme.webp",
-        result_picture1_caption: "Mobile View",
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704375353/result1_tugasakhir.webp",
+        result_picture1_caption: "Transition Planning",
         result_picture2:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704121963/result2_gcbme.webp",
-        result_picture2_caption: "Desktop View",
-        result_title: "More engaging, informative and user-friendly.",
-        result_text: `After completing the project and reviewing the reports, we have successfully achieved the main goal of making the conference process more accessible to the user. The interface is now more engaging and informative.\n
-          Furthermore, we have continued our collaboration with GCBME from 2021 until the latest GCBME, which took place in 2023.`,
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704375353/result2_tugasakhir.webp",
+        result_picture2_caption: "Future Enterprise Architecture for IMS",
+        result_title:
+          "Adoption of an enterprise architecture approach to the new Identity Management System",
+        result_text: `This research applies the TOGAF enterprise architecture framework to their Identity Management System. It was discovered that Itenas currently lacks a centralized identity management system, but they have plans to introduce single sign-on.\n
+        To address this, a centralized solution is being developed, incorporating identity federation for future services. The adoption of an enterprise architecture approach ensures a comprehensive perspective. In summary, this project concludes with a proposed architecture design for the Identity Management System and plans for its implementation.`,
       },
     },
   },
