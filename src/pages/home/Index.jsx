@@ -7,7 +7,6 @@ import WorkList from "../work/WorkList";
 
 const Home = () => {
 
-
   return (
     <>
       <Helmet>

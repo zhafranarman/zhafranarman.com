@@ -7,9 +7,7 @@ const AboutHeader = () => {
         <div className="about-header-column">
           <img className="about-header-image" src="https://res.cloudinary.com/djvq4m3mz/image/upload/v1704107961/about3.webp" alt="Photo of Muhammad Zhafran Arman and friends working on a project" height="350" width="350" loading="eager" title="About Photo Header" />
           <a href={resume}
-        download="resume-zhafran"
-        target="_blank"
-        rel="noreferrer" className="cta-resume">
+            target="_blank" rel="noopener noreferrer" className="cta-resume">
             <span>Résumé</span>
             <svg className="cta-resume-icon" width="100%" height="100%" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.5 21C6.5 18.3585 10 12 21.5 1M21.5 1C20.1087 7.94929 20.1997 10.3802 21.5 17M21.5 1C14.2688 1.96061 11.9012 2.05341 5 1" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

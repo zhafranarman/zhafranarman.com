@@ -19,7 +19,6 @@ const RoutesList = () => {
       <Route path="work" element={<Work />} />
       <Route path="work/:id" element={<ProjectPage />} />
     </Routes>
-
   )
 }
 
