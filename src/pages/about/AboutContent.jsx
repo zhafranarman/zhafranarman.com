@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AboutContent = () => {
   return (
     <section className="container">
@@ -13,24 +15,25 @@ const AboutContent = () => {
               <span className="experience-title">Digitalkultr</span>
               <span className="experience-time">( 2018 - Present )</span>
               <p className="experience-desc">Digitalkultr is a creative hub I founded with friends. We specialize in crafting websites, apps, and captivating UI/UX designs for clients. But we're not just about business; we love diving into self-initiated projects that keep our creativity buzzing. The latest projects I worked on at Digital Kultur are&nbsp;
-                <span><a href="#" className="hyperlink-about">Studee.com (Web Apps)</a></span> and&nbsp;
-                <span><a href="#" className="hyperlink-about">Cre for Earth (E-commerce Website).</a></span></p>
+                <span><Link to="/work/studee" className="hyperlink-about">Studee LMS Concept</Link></span> and&nbsp;
+                <span><Link to="/work/GCBME" className="hyperlink-about">GCBME.</Link></span>
+              </p>
             </div>
             <div className="experience-items">
               <span className="experience-title">Institut Teknologi Nasional</span>
               <span className="experience-time">( 2023 )</span>
               <p className="experience-desc">
-                For my final project during my college years, I had the opportunity to engage in research focused on creating an enterprise architecture for an Identity Management System utilizing the TOGAF framework. The objective of this research was to design a robust architecture for identity management, laying the groundwork for a future-ready, Smart campus (<a href="#" className="hyperlink-about">See The Publication</a>).</p>
+                For my final project during my college years, I had the opportunity to engage in research focused on creating an enterprise architecture for an Identity Management System utilizing the TOGAF framework. The objective of this research was to design a robust architecture for identity management, laying the groundwork for a future-ready, Smart campus (<Link to="/work/tugasakhir" className="hyperlink-about">Read Case Study</Link>).</p>
             </div>
             <div className="experience-items">
               <span className="experience-title">Katajihiji, Indococotama</span>
               <span className="experience-time">( 2021 - 2023)</span>
-              <p className="experience-desc">At katajihiji.id and indococotama, both under the same ownership, my responsibilities were, to create of an engaging landing page. Additionally, I managed the setup of their corporate email and server configuration, blending design finesse with technical optimization.</p>
+              <p className="experience-desc">At katajihiji.id and indococotama, both under the same ownership, my responsibilities were, to create of an engaging landing page. Additionally, I managed the setup of their corporate email and server configuration, blending design finesse with technical optimization. (<Link to="/work/indococotama" className="hyperlink-about">Read Case Study</Link>)</p>
             </div>
             <div className="experience-items">
               <span className="experience-title">Akselerasi Entertaintment </span>
               <span className="experience-time">( 2020 - 2021)</span>
-              <p className="experience-desc">At Akselerasi Entertainment, my primary role is a part of the design team, enhancing the visual appeal of our social media pages, making digital design for their events. Additionally as a frontend developer, I also contribute to creating a platform for simulating final exams for high school students in Indonesia. (<a href="#" className="hyperlink-about">SimulasiEdu</a>)</p>
+              <p className="experience-desc">At Akselerasi Entertainment, my primary role is a part of the design team, enhancing the visual appeal of our social media pages, making digital design for their events. Additionally as a frontend developer, I also contribute to creating a platform for simulating final exams for high school students in Indonesia. (<Link to="/work/simulasiedu" className="hyperlink-about">Simulasiedu</Link>)</p>
             </div>
           </div>
         </article>

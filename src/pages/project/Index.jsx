@@ -38,7 +38,9 @@ const ProjectPage = () => {
         <Helmet>
           <title>Project Not Found</title>
         </Helmet>
-        <ProjectNotFound />
+        <Transition>  
+          <ProjectNotFound />
+        </Transition>
       </>
     )
   }

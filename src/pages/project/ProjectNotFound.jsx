@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import not_found_illu from "../../assets/images/project_notfound.webp"
 
 const ProjectNotFound = () => {
@@ -14,6 +15,7 @@ const ProjectNotFound = () => {
           <p>
             Here's an idea: why don't you tell me about the project you've been looking for? Maybe we can make it happen.
           </p>
+          <Link className="not-found-cta" to="/">Go To Homepage</Link>
         </div>
       </div>
     </section>

@@ -25,7 +25,7 @@ footer {
 
       .label-wrapper {
         display: inline-flex;
-        margin-block: 1.5rem;
+        margin-bottom: $font-size-S;
         gap: 0.75rem;
         align-items: center;
 
@@ -34,20 +34,7 @@ footer {
           width: 0.75rem;
           border-radius: 50%;
           background-color: hsl(134, 61%, 55%);
-
-          animation: availability 0.75s infinite $animation-ease;
-        }
-
-        @keyframes availability {
-          0% {
-            opacity: 0.3;
-          }
-          50% {
-            opacity: 0.8;
-          }
-          to {
-            opacity: 0.3;
-          }
+          animation: breathing 0.75s infinite $animation-ease;
         }
         .label {
           font-size: $font-size-S;
@@ -58,15 +45,39 @@ footer {
         }
       }
 
-      .footer-mail {
-        font-size: clamp(30px, 7vw, 42px);
-        font-family: $font-family-accent;
-        color: $color-white;
+      .clock {
+        font-size: $font-size-S;
+        margin-bottom: $font-size-S;
+        color: hsl(0, 0%, 50%);
+
+        .time{
+          text-transform: uppercase;
+          .breathing-colon {
+            font-size: calc($font-size-S * 1.25);
+            animation: breathing 0.75s infinite $animation-ease;
+          }
+        }
+      }
+
+      .footer-mail-wrapper {
         backdrop-filter: blur(100px);
         background-color: rgba(10, 12, 13, 0.5019607843);
         padding: 24px 24px 16px;
-        border-radius: 0.25em;
+        border-radius: 0.5rem;
         border: solid 0.5px #37373759;
+
+        .footer-mail {
+          font-size: clamp(30px, 7vw, 42px);
+          font-family: $font-family-accent;
+          color: $color-white;
+          transition: all 0.5s $animation-ease;
+        }
+
+        &:hover {
+          .footer-mail {
+            transform: scale(0.98);
+          }
+        }
       }
     }
 
@@ -76,17 +87,13 @@ footer {
       grid-template-columns: 1fr auto 1fr;
       align-items: center;
       padding: 1.25rem;
-      border-radius: 0.5rem;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background-color: rgba(10, 12, 13, 0.5019607843);
-      border: solid 0.5px rgba(55, 55, 55, 0.3490196078);
 
       @include media("<md") {
         grid-row-gap: 8px;
         text-align: center;
         grid-template-columns: auto;
         place-items: center;
+        padding-block: 0;
       }
 
       .footer-column:nth-child(2) {
@@ -105,8 +112,6 @@ footer {
         li {
           a {
             color: $color-white;
-            text-decoration: underline;
-            text-underline-offset: 0.25rem;
             font-size: calc($font-size-S - 0.15rem);
 
             @include media("<=md") {
@@ -133,6 +138,18 @@ footer {
           font-size: 12px;
         }
       }
+    }
+  }
+
+  @keyframes breathing {
+    0% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    to {
+      opacity: 0.3;
     }
   }
 }

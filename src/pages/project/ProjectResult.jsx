@@ -5,17 +5,28 @@ const ProjectResult = ({ project }) => {
     backgroundColor: project.color || 'defaultColor',
   };
 
+  const isResultPicture1Empty = !project.project_detail.result.result_picture1;
+  const isResultPicture2Empty = !project.project_detail.result.result_picture2;
+
   return (
     <section className="container">
       <div className="project-result-section inner-section">
         <div className="project-result-grid">
           <figure className="grid-result-wrapper">
-            <img className="gallery-result-picture" src={project.project_detail.result.result_picture1} />
-            <figcaption>{project.project_detail.result.result_picture1_caption}</figcaption>
+            {!isResultPicture1Empty && (
+              <div>
+                <img className="gallery-result-picture" src={project.project_detail.result.result_picture1} />
+                <figcaption>{project.project_detail.result.result_picture1_caption}</figcaption>
+              </div>
+            )}
           </figure>
           <figure className="grid-result-wrapper">
-            <img className="gallery-result-picture" src={project.project_detail.result.result_picture2} />
-            <figcaption>{project.project_detail.result.result_picture2_caption}</figcaption>
+            {!isResultPicture2Empty && (
+              <div>
+                <img className="gallery-result-picture" src={project.project_detail.result.result_picture2} />
+                <figcaption>{project.project_detail.result.result_picture2_caption}</figcaption>
+              </div>
+            )}
           </figure>
           <div className="grid-result-wrapper">
             <div className="project-result-text">

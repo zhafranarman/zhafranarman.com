@@ -1,17 +1,7 @@
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { work } from "./data";
 
 const WorkCard = ({ project }) => {
-
-  const location = useLocation();
-
-  // Determine the correct 'to' value based on the current pathname
-  let toValue;
-  if (location.pathname === '/') {
-    toValue = `work/${project.id}`;
-  } else if (location.pathname === '/work') {
-    toValue = `${project.id}`;
-  }
 
   return (
     <article className="work-card" key={project.id}>
@@ -33,7 +23,7 @@ const WorkCard = ({ project }) => {
             <span>TL;DR</span>
             <p className="work-card-desc">{project.description}</p>
           </div>
-          <Link className="work-cta" to={toValue}>
+          <Link className="work-cta" to={`/work/${project.id}`}>
             <span>Read More</span>
             <span className="cta-icon-wrapper">
               <svg className="work-cta-icon" width="100%" height="100%" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">

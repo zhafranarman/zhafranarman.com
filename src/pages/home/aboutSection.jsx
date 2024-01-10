@@ -48,7 +48,7 @@ const AboutSection = () => {
     }
   }
 
-  const phrase = `Over the past 9+ years, I've worked in various areas of digital design, including front-end development and UI/UX Design. I take pride in wearing many hats. I am currently freelancing and on the lookout for new opportunities, especially in the realms of design and frontend development. Ready to embark on the next chapter of creativity and innovation!`
+  const phrase = `Over the past 4 years, I've worked in various areas of digital design, including front-end development and UI/UX Design. I take pride in wearing many hats. I am currently freelancing and on the lookout for new opportunities, especially in the realms of design and frontend development. Ready to embark on the next chapter of creativity and innovation!`
 
   return (
     <section className="about-section container">

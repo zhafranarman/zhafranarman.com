@@ -20,7 +20,7 @@ const AboutHeader = () => {
             I'm Zhafran a UI/UX Designer & Frontend Developer from Bandung, Indonesia.
           </h1>
           <p className="about-header-text">
-            Over the past 5+ years, I've worked in various areas of digital design, including front-end development, email, and web UI/UX Design. I take pride in wearing many hats.
+            Over the past 4 years, I've worked in various areas of digital design, including front-end development, email, and web UI/UX Design. I take pride in wearing many hats.
           </p>
           <p className="about-header-text">
             Before delving into the world of UI/UX Design, my journey began as a graphic designer. One of my initial jobs involved creating designs for shirts, posters, and social media posts—a time when designer apps didn't offer an abundance of free templates. It was an enjoyable experience.

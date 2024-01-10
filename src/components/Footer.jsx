@@ -1,4 +1,10 @@
+import Clock from "./Clock";
+import resume from "../assets/document/resume-zhafran.pdf"
+
 const Footer = () => {
+
+  const bandungTime = Clock();
+
   return (
     <footer>
       <div className="container footer-wrapper">
@@ -9,7 +15,18 @@ const Footer = () => {
               Open to Work
             </span>
           </div>
-          <a className="footer-mail" href="mailto:hi@zhafranarman.com">hi@zhafranarman.com</a>
+          <div className="clock">
+            <span className="time">
+              {bandungTime.slice(0, 2)}
+              <span className="breathing-colon">{bandungTime.slice(2, 3)}</span>
+              {bandungTime.slice(3)}
+            </span> in Bandung, Indonesia
+          </div>
+          <a className="footer-mail-wrapper" href="mailto:hi@zhafranarman.com">
+            <div className="footer-mail">
+              hi@zhafranarman.com
+            </div>
+          </a>
         </div>
         <div className="footer">
           <div className="footer-column">Zhafran Arman © 2023</div>
@@ -30,8 +47,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.behance.net/zhafranarman" rel="noreferrer" target="_blank">
-                Bēhance
+              <a href={resume} target="_blank" rel="noopener noreferrer" >
+                Resume
               </a>
             </li>
           </ul>

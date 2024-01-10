@@ -12,7 +12,7 @@ const ProjectNextCTA = ({ currentProjectIndex }) => {
       <div className="inner-section next-project-section">
         <Link className="next-project-cta" to={`/work/${nextProject.id}`}>
           <span>
-            See Other Project ?
+            Check Other Projects
           </span>
           <div>
             {nextProject.title}
