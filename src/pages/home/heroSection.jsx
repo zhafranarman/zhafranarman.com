@@ -1,6 +1,7 @@
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useRef, useLayoutEffect, } from "react";
+import ReactImage from "../../components/Image";
 
 const Hero = () => {
 
@@ -65,7 +66,15 @@ const Hero = () => {
         <span ref={LastName} className="name">Arman</span>
         <div className="hero-image-wrapper">
           <figure ref={HeroImage} className="hero-image-frame">
-            <img className="hero-image" src="https://res.cloudinary.com/djvq4m3mz/image/upload/v1704094430/hero.webp" alt="Photo of Muhammad Zhafran Arman" height="465" width="350" loading="eager" />
+            <ReactImage
+                className="hero-image"  
+                src="https://res.cloudinary.com/djvq4m3mz/image/upload/v1704094430/hero.webp" 
+                hash="|MBWe~~q-;?b?b?b%Mxut7of%Mofayj[offQRjRjIUM{ofayRjRjayofj[M{M{Rjt7ofRjWBoft7M{oft7WBayfQayWBayt7ayofofWBofj[ayWBayj[M{WBofWBj[ofofWBWBt7WBWBj[fQofofayoffQofayWBj[ayay"
+                alt="Photo of Muhammad Zhafran Arman" 
+                height="465" 
+                width="350"           
+            />
+            {/* <img className="hero-image" src="https://res.cloudinary.com/djvq4m3mz/image/upload/v1704094430/hero.webp" alt="Photo of Muhammad Zhafran Arman" height="465" width="350" loading="eager" /> */}
             <figcaption>
               <h1 className="hero-text">I'm a UI/UX designer & frontend developer. I make things on the internet.</h1>
             </figcaption>

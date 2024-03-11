@@ -5,6 +5,7 @@ import About from "./about/Index.jsx";
 import Work from "./work/Index.jsx";
 import ProjectPage from "./project/Index.jsx";
 import NotFound from "../components/404.jsx";
+import Test from "./test.jsx";
 
 const RoutesList = () => {
 
@@ -19,6 +20,7 @@ const RoutesList = () => {
         <Route path=":id" element={<ProjectPage />} />
       </Route>
       <Route path="*" element={<NotFound/>} />
+      <Route path="/test" element={<Test/>}/>
     </Routes>
   )
 }

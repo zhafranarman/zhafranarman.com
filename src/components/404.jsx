@@ -20,7 +20,7 @@ const NotFound = () => {
           </div>
           <div className="not-found-text">
             <h1>
-              Oops! Peage Not Found.
+              Oops! Page Not Found.
             </h1>
             <p>
               OMG this is embarassing, this shouldn't happen. let me guide you to the homepage.
