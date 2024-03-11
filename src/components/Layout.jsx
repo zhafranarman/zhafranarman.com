@@ -8,11 +8,11 @@ export default function Layout({ children }) {
   return (
     <SmoothScroll>
       <Grain />
-      <Navbar />
+      {/* <Navbar /> */}
       <AnimatePresence>
         {children}
       </AnimatePresence>
-      <Footer />
+      {/* <Footer /> */}
     </SmoothScroll>
   );
 }
