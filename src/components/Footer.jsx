@@ -22,9 +22,9 @@ const Footer = () => {
               {bandungTime.slice(3)}
             </span> in Bandung, Indonesia
           </div>
-          <a className="footer-mail-wrapper" href="mailto:hi@zhafranarman.com">
+          <a className="footer-mail-wrapper" href="mailto:iam@zhafranarman.com">
             <div className="footer-mail">
-              hi@zhafranarman.com
+              iam@zhafranarman.com
             </div>
           </a>
         </div>
