@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { work } from "../work/data";
 import { useEffect } from "react";
 
-
 import Transition from "../../components/Transition";
 import ProjectNotFound from "./ProjectNotFound";
 import ProjectChallenges from "./ProjectChallanges";
@@ -11,8 +10,6 @@ import ProjectHeader from "./ProjectHeader";
 import ProjectProcess from "./ProjectProcess";
 import ProjectResult from "./ProjectResult";
 import ProjectNextCTA from "./ProjectNextCTA";
-
-
 
 const ProjectPage = () => {
   const { id } = useParams();
@@ -49,6 +46,7 @@ const ProjectPage = () => {
     <>
       <Helmet>
         <title>Work - {project.title}</title>
+        <link rel="canonical" href={`https://zhafranarman.com/work/${project.id}`} />
       </Helmet>
       <Transition>  
         <ProjectHeader project={project} />

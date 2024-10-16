@@ -17,6 +17,7 @@
       font-size: $font-size-XL;
       font-weight: 400;
       font-family: $font-family-accent;
+      line-height: 1.125;
     }
 
     @include media ("<=md"){
@@ -44,7 +45,7 @@
 
       .experience-title {
         font-size: $font-size-M;
-        font-weight: 500;
+        font-weight: 600;
       }
 
       .experience-time {

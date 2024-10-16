@@ -59,7 +59,7 @@
       }
 
       .menu-button-text {
-        color: $color-white;
+        color: $color-light-grey;
         font-family: $font-family-text;
         font-size: 1.125rem;
         transition: all 0.5s $animation-ease;
@@ -97,7 +97,7 @@
 
       .nav-links {
         font-size: 1.125rem;
-        color: $color-white;
+        color: $color-light-grey;
         font-family: $font-family-text;
         background-image: url(/src/assets/svg/underline.svg);
         background-position: bottom 0em left;
@@ -107,6 +107,7 @@
 
         &:hover {
           background-size: 100% 2.5px;
+          color: $color-white;
         }
 
         @include media("<=sm") {
@@ -116,6 +117,7 @@
 
       .nav-links.active {
         background-size: 100% 2.5px;
+        color: $color-white;
       }
     }
   }

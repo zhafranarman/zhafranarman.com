@@ -61,6 +61,58 @@ export const work = [
     },
   },
   {
+    id: "indococotama",
+    color: "#1A1A1A",
+    title: "Indococotama",
+    thumbnail:
+      "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704632451/thumbnail_indococotama.webp",
+    subtitle: "Supplying coconut derivative products",
+    tags: ["Branding", "UI/UX Design"],
+    description:
+      "Indococotama is a global supplier of coconut derivative products, seeking to establish an international online presence. My role in this project involves crafting engaging landing page with user-friendly UI/UX designs, developing branding strategies, and overseeing the deployment of websites to facilitate the expansion of Indococotama's market reach.",
+    project_detail: {
+      project_header:
+        "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704728995/header_indococotama.webp",
+      challenges: {
+        challenges_picture:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704730228/challanges_indococotama.webp",
+        challenges_picture_caption: "The Background of Indococotama",
+        challenges_text:
+          "Indococotama has embarked on this project with the aim of becoming a leading global supplier of coconut derivative products through the establishment of a compelling online presence. To achieve this, there is a need to create an engaging landing page featuring user-friendly interfaces, informative product details, and global reach through SEO.",
+        solution_text:
+          "To overcome these challenges, we propose developing a captivating online presence for Indococotama. This involves creating an interactive landing page with user-friendly interfaces, informative product details, and implementing a robust SEO strategy for global reach. This comprehensive approach ensures a seamless and engaging user experience.",
+      },
+      process: {
+        process_picture1:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704731734/process1_indococotama.webp",
+        process_picture1_caption: "Branding",
+        process_picture2:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704731734/process2_indococotama.webp",
+        process_picture2_caption: "Design and Prototyping",
+        process_picture3: "",
+        process_picture3_caption: "",
+        process_picture4: "",
+        process_picture4_caption: "",
+        process_title: "The Process of Building Indococotama",
+        process_text: `In the initial phase of the project, I focused on crafting an engaging branding strategy for Indococotama. This involved creating a distinctive and appealing brand identity that resonates with the target audience.\n
+          Following the establishment of the branding, I proceeded to design and prototype the landing page. This step involved translating the brand identity into a visually compelling and user-friendly interface. Through careful design choices and prototyping, the goal was to ensure that the landing page not only captures attention but also provides a seamless and enjoyable experience for visitors.\n
+          Simultaneously, a key aspect of the project involved creating content with SEO in mind. This included developing informative product details and implementing a robust SEO strategy to enhance the website's visibility and accessibility to a global audience.
+          `,
+      },
+      result: {
+        result_picture1:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704732399/result1_indococotama.webp",
+        result_picture1_caption: "Mobile View",
+        result_picture2:
+          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704732399/result2_indococotama.webp",
+        result_picture2_caption: "Web View",
+        result_title:
+          "Engaging Landing Page, Targeted Branding, and Easy Customization",
+        result_text: `The Indococotama project has yielded a compelling outcome—a captivating landing page with a user-friendly, minimalist design. The crafted brand identity resonates with the target audience, and the design and prototyping ensure a seamless user experience. SEO-ready content enhances global visibility, and the customizable feature allows easy editing for the project owner.`,
+      },
+    },
+  },
+  {
     id: "tugasakhir",
     color: "#1A1A1A",
     title: "Bachelor's Research",
@@ -157,10 +209,10 @@ export const work = [
         process_title:
           "Crafting Studee: A Journey through Research, Branding, Design, and Prototyping in LMS Development.",
         process_text: `Our journey began with thorough research, utilizing User Experience Questionnaires (UEQ), conducting end-user interviews, and studying desirable features from leading global Learning Management Systems (LMS).\n
-          We recognized the importance of engaging branding in the educational technology landscape. Our focus was on creating a compelling visual identity that resonates with our target audience, leaving a positive and memorable impression.\n
-          We developed a robust design system to ensure consistency and coherence in the visual elements and interactions within our Learning Management System (LMS) product. This systematic approach streamlined the development process, contributing to a cohesive and user-friendly interface.\n
-          Moving from conceptual designs to interactive models, we entered the prototyping phase. This step allowed us to visualize user flow, refine features, address potential usability issues, and shape the overall user experience of our LMS product.
-          `,
+        We recognized the importance of engaging branding in the educational technology landscape. Our focus was on creating a compelling visual identity that resonates with our target audience, leaving a positive and memorable impression.\n
+        We developed a robust design system to ensure consistency and coherence in the visual elements and interactions within our Learning Management System (LMS) product. This systematic approach streamlined the development process, contributing to a cohesive and user-friendly interface.\n
+        Moving from conceptual designs to interactive models, we entered the prototyping phase. This step allowed us to visualize user flow, refine features, address potential usability issues, and shape the overall user experience of our LMS product.
+        `,
       },
       result: {
         result_picture1: "",
@@ -170,58 +222,6 @@ export const work = [
         result_title: "Room for improvement",
         result_text: `In the ongoing development phase, this project is making significant strides in addressing challenges within the Indonesian education system. It's important to note that we're a work in progress, with plenty of room for improvement as we strive to enhance customizability and streamline user experiences within the Learning Management System (LMS). Our team remains committed to refining and advancing the product to offer a comprehensive solution that aligns with the evolving needs of the Indonesian education landscape.\n
         With a sense of urgency, we aim to expedite the development process and deliver the finalized product at the earliest opportunity.`,
-      },
-    },
-  },
-  {
-    id: "indococotama",
-    color: "#1A1A1A",
-    title: "Indococotama",
-    thumbnail:
-      "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704632451/thumbnail_indococotama.webp",
-    subtitle: "Supplying coconut derivative products",
-    tags: ["Branding", "UI/UX Design"],
-    description:
-      "Indococotama is a global supplier of coconut derivative products, seeking to establish an international online presence. My role in this project involves crafting engaging landing page with user-friendly UI/UX designs, developing branding strategies, and overseeing the deployment of websites to facilitate the expansion of Indococotama's market reach.",
-    project_detail: {
-      project_header:
-        "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704728995/header_indococotama.webp",
-      challenges: {
-        challenges_picture:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704730228/challanges_indococotama.webp",
-        challenges_picture_caption: "The Background of Indococotama",
-        challenges_text:
-          "Indococotama has embarked on this project with the aim of becoming a leading global supplier of coconut derivative products through the establishment of a compelling online presence. To achieve this, there is a need to create an engaging landing page featuring user-friendly interfaces, informative product details, and global reach through SEO.",
-        solution_text:
-          "To overcome these challenges, we propose developing a captivating online presence for Indococotama. This involves creating an interactive landing page with user-friendly interfaces, informative product details, and implementing a robust SEO strategy for global reach. This comprehensive approach ensures a seamless and engaging user experience.",
-      },
-      process: {
-        process_picture1:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704731734/process1_indococotama.webp",
-        process_picture1_caption: "Branding",
-        process_picture2:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704731734/process2_indococotama.webp",
-        process_picture2_caption: "Design and Prototyping",
-        process_picture3: "",
-        process_picture3_caption: "",
-        process_picture4: "",
-        process_picture4_caption: "",
-        process_title: "The Process of Building Indococotama",
-        process_text: `In the initial phase of the project, I focused on crafting an engaging branding strategy for Indococotama. This involved creating a distinctive and appealing brand identity that resonates with the target audience.\n
-          Following the establishment of the branding, I proceeded to design and prototype the landing page. This step involved translating the brand identity into a visually compelling and user-friendly interface. Through careful design choices and prototyping, the goal was to ensure that the landing page not only captures attention but also provides a seamless and enjoyable experience for visitors.\n
-          Simultaneously, a key aspect of the project involved creating content with SEO in mind. This included developing informative product details and implementing a robust SEO strategy to enhance the website's visibility and accessibility to a global audience.
-          `,
-      },
-      result: {
-        result_picture1:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704732399/result1_indococotama.webp",
-        result_picture1_caption: "Mobile View",
-        result_picture2:
-          "https://res.cloudinary.com/djvq4m3mz/image/upload/v1704732399/result2_indococotama.webp",
-        result_picture2_caption: "Web View",
-        result_title:
-          "Engaging Landing Page, Targeted Branding, and Easy Customization",
-        result_text: `The Indococotama project has yielded a compelling outcome—a captivating landing page with a user-friendly, minimalist design. The crafted brand identity resonates with the target audience, and the design and prototyping ensure a seamless user experience. SEO-ready content enhances global visibility, and the customizable feature allows easy editing for the project owner.`,
       },
     },
   },
@@ -331,4 +331,3 @@ export const work = [
     },
   },
 ];
-

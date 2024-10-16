@@ -48,6 +48,20 @@
   }
 }
 
+.hover{
+  background-image: url(/src/assets/svg/underline.svg);
+  background-position: bottom 0em left;
+  background-repeat: no-repeat;
+  background-size: 0% 2.5px;
+  transition: all 0.2s $animation-ease;
+  cursor: pointer;
+
+  &:hover {
+    background-size: 100% 2.5px;
+    color: $color-white;
+  }
+}
+
 .grain {
   animation: grain 10s steps(20) infinite;
   background-image: url(/src/assets/misc/grain.webp);
