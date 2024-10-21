@@ -4,6 +4,7 @@ import Transition from "../../components/Transition";
 import AboutSection from "./aboutSection";
 import Hero from "./heroSection";
 import WorkList from "../work/WorkList";
+import OG_Image from "../../assets/images/SEO/og_image.webp"
 
 const Home = () => {
 
@@ -18,7 +19,7 @@ const Home = () => {
         
         <meta property="og:title" content="Zhafran Arman, I make digital things on the internet." />
         <meta property="og:description" content="Muhammad Zhafran Arman is a UI/UX designer & frontend developer. making digital experiences for people." />
-        <meta property="og:image" content="/og_image.webp" />
+        <meta property="og:image" content={OG_Image} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://zhafranarman.com/" />
       </Helmet>
