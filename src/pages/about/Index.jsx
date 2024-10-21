@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
     <Helmet prioritizeSeoTags>
-      <title>About Me — Zhafran Arman</title>
+      <title>About · Zhafran Arman</title>
       <link rel="canonical" href="https://zhafranarman.com/about" />
     </Helmet>
       <Transition>

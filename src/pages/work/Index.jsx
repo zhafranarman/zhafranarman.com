@@ -9,7 +9,7 @@ const Work = () => {
   return (
     <>
     <Helmet prioritizeSeoTags>
-      <title>Work — Zhafran Arman</title>
+      <title>Work · Zhafran Arman</title>
       <link rel="canonical" href="https://zhafranarman.com/work" />
     </Helmet>
       <Transition>

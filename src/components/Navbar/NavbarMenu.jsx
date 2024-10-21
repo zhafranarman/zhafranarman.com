@@ -8,6 +8,7 @@ const NavbarMenu = () => {
     <ul className="nav-menu">
       <li><NavLink className={`nav-links ${pathname === "/about" ? 'active' : ''}`} to="/about">About</NavLink></li>
       <li><NavLink className={`nav-links ${pathname === "/work" ? 'active' : ''}`}to="/work">Work</NavLink></li>
+      <li><NavLink className={`nav-links ${pathname === "/blog" ? 'active' : ''}`}to="/blog">Blog</NavLink></li>
       <li>
         <a className="nav-links" href="mailto:iam@zhafranarman.com">Contact</a>
       </li>

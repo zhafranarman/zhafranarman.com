@@ -45,7 +45,7 @@ const ProjectPage = () => {
   return (
     <>
       <Helmet>
-        <title>Work - {project.title}</title>
+        <title>Work · {project.title}</title>
         <link rel="canonical" href={`https://zhafranarman.com/work/${project.id}`} />
       </Helmet>
       <Transition>  

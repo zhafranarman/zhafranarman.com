@@ -32,23 +32,23 @@ const Footer = () => {
           <div className="footer-column">Zhafran Arman © 2023</div>
           <ul className="footer-column">
             <li >
-              <a href="https://www.linkedin.com/in/zhafranarman/" rel="noreferrer" target="_blank">
+              <a className="hover" href="https://www.linkedin.com/in/zhafranarman/" rel="noreferrer" target="_blank">
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://github.com/zhafranarman" rel="noreferrer" target="_blank">
+              <a className="hover" href="https://github.com/zhafranarman" rel="noreferrer" target="_blank">
                 Github
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/zhafranarman" rel="noreferrer" target="_blank">
+              <a className="hover" href="https://www.instagram.com/zhafranarman" rel="noreferrer" target="_blank">
                 Instagram
               </a>
             </li>
             <li>
-              <a href={resume} target="_blank" rel="noopener noreferrer" >
-                Resume
+              <a className="hover" href={resume} target="_blank" rel="noopener noreferrer" >
+                Résumé
               </a>
             </li>
           </ul>

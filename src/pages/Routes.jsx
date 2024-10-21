@@ -6,7 +6,8 @@ import Work from "./work/Index.jsx";
 import ProjectPage from "./project/Index.jsx";
 import NotFound from "../components/404.jsx";
 import Test from "./test.jsx";
-// import Blog from "./blog/index.jsx";
+import Blog from "./blog/index.jsx";
+import BlogPage from "./blog/BlogPage.jsx";
 
 const RoutesList = () => {
 
@@ -20,10 +21,10 @@ const RoutesList = () => {
         <Route index element={<Work />} />
         <Route path=":id" element={<ProjectPage />} />
       </Route>
-      {/* <Route path="/blog">
+      <Route path="/blog">
         <Route index element={<Blog />} />
-        <Route path=":id" element={<ProjectPage />} />
-      </Route> */}
+        <Route path=":slug" element={<BlogPage />} />
+      </Route>
       <Route path="*" element={<NotFound/>} />
       <Route path="/test" element={<Test/>}/>
     </Routes>
