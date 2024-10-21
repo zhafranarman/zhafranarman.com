@@ -51,8 +51,15 @@ const Blog = () => {
     <>
       <Helmet>
         <title>Blog · Zhafran Arman</title>
-        <link rel="canonical" href="https://zhafranarman.com/blog" />
         <meta name="description" content="Thoughts and Small Discoveries I've gathered to learn and read. Discover the latest news in IT Scape." />
+        <link rel="canonical" href={`https://zhafranarman.com/work/blog`} />
+
+        <meta property="og:title" content="Blog · Zhafran Arman" />
+        <meta property="og:description" content="Thoughts and Small Discoveries I've gathered to learn and read. Discover the latest news in IT Scape."/>
+        <meta property="og:url" content={`https://zhafranarman.com/work/blog`} />
+
+        <meta name="twitter:title" content="Blog · Zhafran Arman" />
+        <meta name="twitter:description" content="Thoughts and Small Discoveries I've gathered to learn and read. Discover the latest news in IT Scape." />
       </Helmet>
       <Transition>
         <div className="blog-list-page">

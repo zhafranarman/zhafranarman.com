@@ -59,9 +59,16 @@ const BlogPage = () => {
     <>
       <Helmet>
         <title>{post.title} · {post.tags && post.tags.length > 0 ? post.tags.map(tag => tag.name).join(", ") : "No tags"} by {post.author.name}</title>
-        <link rel="canonical" href={`https://zhafranarman.com/blog/${slug}`} />
         <meta name="description" content={`${post.seo.description}`} />
+        <link rel="canonical" href={`https://zhafranarman.com/blog/${slug}`} />
         <meta name="author" content={`${post.author.name}`}/>
+
+        <meta property="og:title" content={`${post.title} · ${post.tags && post.tags.length > 0 ? post.tags.map(tag => tag.name).join(", ") : "No tags"} by ${post.author.name}`} />
+        <meta property="og:description" content={`${post.seo.description}`} />
+        <meta property="og:url" content={`https://zhafranarman.com/blog/${slug}`} />
+
+        <meta name="twitter:title" content={`${post.title} · ${post.tags && post.tags.length > 0 ? post.tags.map(tag => tag.name).join(", ") : "No tags"} by ${post.author.name}`} />
+        <meta name="twitter:description" content={`${post.seo.description}`}  />
       </Helmet>
       <Transition>
         <div className="blog-post-container">

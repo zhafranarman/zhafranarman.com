@@ -10,18 +10,17 @@ const Home = () => {
 
   return (
     <>
-      <Helmet>
+      <Helmet prioritizeSeoTags>
         <title>Zhafran Arman · I make digital things on the internet.</title>
         <meta name="description" content="Muhammad Zhafran Arman is a UI/UX designer & frontend developer. making digital experiences for people." />
-        <meta name="keywords" content="UI/UX Designer, Frontend Developer, Web Developer, Designer, Developer" />
-        <meta name="author" content="Muhammad Zhafran Arman" />
         <link rel="canonical" href="https://zhafranarman.com/" />
-        
-        <meta property="og:title" content="Zhafran Arman, I make digital things on the internet." />
+
+        <meta property="og:title" content="Zhafran Arman · I make digital things on the internet." />
         <meta property="og:description" content="Muhammad Zhafran Arman is a UI/UX designer & frontend developer. making digital experiences for people." />
-        <meta property="og:image" content={OG_Image} />
-        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://zhafranarman.com/" />
+
+        <meta name="twitter:title" content="Zhafran Arman · I make digital things on the internet." />
+        <meta name="twitter:description" content="Muhammad Zhafran Arman is a UI/UX designer & frontend developer. making digital experiences for people." />
       </Helmet>
       <Transition>
         <Hero />

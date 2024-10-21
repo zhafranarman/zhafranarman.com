@@ -46,7 +46,15 @@ const ProjectPage = () => {
     <>
       <Helmet>
         <title>Work · {project.title}</title>
+        <meta name="description" content={`${project.subtitle}`} />
         <link rel="canonical" href={`https://zhafranarman.com/work/${project.id}`} />
+
+        <meta property="og:title" content="Work · Zhafran Arman" />
+        <meta property="og:description" content={`${project.subtitle}`}/>
+        <meta property="og:url" content={`https://zhafranarman.com/work/${project.id}`} />
+
+        <meta name="twitter:title" content="Work · Zhafran Arman" />
+        <meta name="twitter:description" content={`${project.subtitle}`} />
       </Helmet>
       <Transition>  
         <ProjectHeader project={project} />
