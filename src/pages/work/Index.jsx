@@ -11,6 +11,7 @@ const Work = () => {
     <Helmet prioritizeSeoTags>
       <title>Work · Zhafran Arman</title>
       <link rel="canonical" href="https://zhafranarman.com/work" />
+      <meta name="description" content="Here some of Zhafran Arman's stuff he's been working on" />
     </Helmet>
       <Transition>
         <WorkList/>

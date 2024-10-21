@@ -76,7 +76,7 @@ const Hero = () => {
             />
             {/* <img className="hero-image" src="https://res.cloudinary.com/djvq4m3mz/image/upload/v1704094430/hero.webp" alt="Photo of Muhammad Zhafran Arman" height="465" width="350" loading="eager" /> */}
             <figcaption>
-              <h1 className="hero-text">I'm a UI/UX designer & frontend developer. I make things on the internet.</h1>
+              <h1 className="hero-text">I'm a UI/UX designer & Frontend Developer. I Make Stuff on The Web.</h1>
             </figcaption>
           </figure>
           <div ref={HeroCTA} className="hero-cta">

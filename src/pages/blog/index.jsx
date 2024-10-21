@@ -52,7 +52,7 @@ const Blog = () => {
       <Helmet>
         <title>Blog · Zhafran Arman</title>
         <link rel="canonical" href="https://zhafranarman.com/blog" />
-        <meta name="description" content="Thoughts and Small Discoveries I've gathered to learn and read. Discover the latest in IT Scape." />
+        <meta name="description" content="Thoughts and Small Discoveries I've gathered to learn and read. Discover the latest news in IT Scape." />
       </Helmet>
       <Transition>
         <div className="blog-list-page">
