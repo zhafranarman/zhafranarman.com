@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const GET_POSTS = gql`
   query ($host: String!) {
     publication(host: $host) {
-      posts(first: 10) {
+      posts(first: 11) {
         edges {
           node {
             title
